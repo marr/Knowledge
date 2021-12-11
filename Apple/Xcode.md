@@ -1,0 +1,324 @@
+# Xcode
+
+## Learn more
+
+- http://developer.apple.com/documentation/xcode.
+- http://developer.apple.com/videos/developer-tools.
+
+## Run code / tests
+
+```
+Line # > Play Icon
+```
+
+## View quick help
+
+```
+Symbol > Option + Click
+```
+
+## View action menu
+
+```
+Symbol > Command + Click
+```
+
+## Auto complete
+
+```
+{type}<tab>[<tab>]
+```
+
+## View library documentation
+
+```
+Window > Developer Documentation
+```
+
+## View console
+
+```
+View > Debug Area > Show Debug Area
+```
+
+## Clean build cache
+
+```
+Product > Clean Build Folder
+```
+
+## Create projects
+
+```
+File > New > Project
+```
+
+- Multiplatform App.
+- Package.
+- Empty.
+
+## Create playgrounds
+
+```
+File > New > Playground
+```
+
+## Create packages
+
+```
+File > New > Package
+```
+
+## Create files
+
+```
+{Select Parent Group}
+File > New > File
+```
+
+- Source.
+- View.
+- Data Model.
+- Markdown.
+
+## Create groups
+
+```
+{Select Parent Group}
+File > New > Group
+```
+
+## Add existing files
+
+```
+File > Add Files to {Project}
+```
+
+## Navigate between files
+
+```
+Folder Icon
+```
+
+## Find / replace in file
+
+```
+Find > Find
+```
+
+## Find in project
+
+```
+Magnifying Glass Icon
+```
+
+## Debug
+
+```
+Line # > Toggle
+Run
+Step Over
+```
+
+## Rename
+
+```
+Right Click > Refactor > Rename
+```
+
+## Create a unit test target
+
+```
+Tests Navigator > Plus Icon > New Unit Test Target
+```
+
+## Create unit tests
+
+```swift
+import XCTest
+@testable import SomeModule
+
+final class SomeThingTests: XCTestCase {
+    func testSomeBehavior() {
+        // Assertions
+    }
+
+    func testAnotherBehavior() {
+        // Assertions
+    }
+
+    // ...
+}
+```
+
+For example:
+
+```swift
+import XCTest
+@testable import SomeModule
+
+final class FormatBirthdateTests: XCTestCase {
+    func testConvertsValidBirthdates() {
+        let result = formatBirthdate(date: "1900-01-23")
+        let expected = "01/23/1900"
+        XCTAssertEqual(result, expected)
+    }
+    
+    func testHasEmptyStringForInvalidFormatting() {
+        let result = formatBirthdate(date: "1-2-1903")
+        let expected = ""
+        XCTAssertEqual(result, expected)
+    }
+    
+    func testHasEmptyStringForInvalidDates() {
+        let result = formatBirthdate(date: "1900-23-23")
+        let expected = ""
+        XCTAssertEqual(result, expected)
+    }
+}
+```
+
+## Create a UI test target
+
+```
+Tests Navigator > Plus Icon > New UI Test Target
+```
+
+## Create UI tests
+
+```swift
+import XCTest
+
+class SomeThingTests: XCTestCase {
+    override func setUpWithError() throws {
+        continueAfterFailure = false
+        // ...
+    }
+
+    override func tearDownWithError() throws {
+        // ...
+    }
+
+    func testSomeBehavior() throws {
+        let app = XCUIApplication()
+        app.launch()
+        // Assertions
+    }
+}
+```
+
+For example:
+
+```swift
+import XCTest
+
+class LaunchTests: XCTestCase {
+    override func setUpWithError() throws {
+        continueAfterFailure = false
+    }
+    
+    func testRendersProfileBrowseWithData() throws {
+        let app = XCUIApplication()
+        app.launch()
+        XCTAssertTrue(app.staticTexts["Luke Skywalker"].exists)
+        XCTAssertTrue(app.staticTexts["Darth Vader"].exists)
+    }
+
+    func testRendersProfileDetailWithData() throws {
+        let app = XCUIApplication()
+        app.launch()
+        app.staticTexts["Kylo Ren"].tap()
+        XCTAssertTrue(app.staticTexts["Born on 10/31/1987"].exists)
+        XCTAssertTrue(app.staticTexts["Force Sensitive"].exists)
+    }
+
+    func testLaunchPerformance() throws {
+        measure(metrics: [XCTApplicationLaunchMetric()]) {
+            XCUIApplication().launch()
+        }
+    }
+}
+```
+
+## Record performance baselines
+
+```
+Run Performance Test > Performance Result Icon > Set Baseline
+```
+
+## Record interactions in UI tests
+
+```
+Place Cursor Inside Test > Record Icon > {Do Interactions} > Stop Icon
+```
+
+## Upgrade syntax
+
+```
+Edit > Convert > Syntax
+```
+
+## View project documentation
+
+```
+Product > Build Documentation
+```
+
+## Add project documentation
+
+```
+Action Menu > Add Documentation
+```
+
+## Display UI canvas
+
+```
+Editor > Canvas
+```
+
+## Switch the active scheme
+
+```
+Scheme
+```
+
+- {Platform} > {Device}.
+
+## Add UI controls
+
+```
+Toolbar > Plus Icon
+Drag & Drop > Canvas / Code
+```
+
+## Add UI previews
+
+```
+Canvas > Plus Icon
+```
+
+## Toggle live preview
+
+```
+Canvas > Play Icon
+```
+
+## Build
+
+```
+Play Icon
+```
+
+- Opens simulator by default.
+
+## Clear app data in Simulator
+
+```
+Home Screen > Long Press App Icon > Delete > Re-build
+```
+
+## Clean all data in Simulator
+
+```
+Device > Erase All Content and Settings
+```
