@@ -41,10 +41,16 @@ Window > Developer Documentation
 View > Debug Area > Show Debug Area
 ```
 
-## Clean build cache
+## Clean build folder
 
 ```
 Product > Clean Build Folder
+```
+
+## Reset package caches
+
+```
+File > Packages > Reset Package Caches
 ```
 
 ## Create projects
