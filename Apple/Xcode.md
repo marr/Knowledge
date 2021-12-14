@@ -23,6 +23,12 @@ Symbol > Option + Click
 Symbol > Command + Click
 ```
 
+## Open quickly
+
+```
+File > Open Quickly
+```
+
 ## Auto complete
 
 ```
