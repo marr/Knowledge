@@ -41,10 +41,19 @@ File > Open Quickly
 Window > Developer Documentation
 ```
 
-## View console
+## Show debug area
 
 ```
 View > Debug Area > Show Debug Area
+```
+
+## Debug
+
+```
+View Hierarchy Button
+Line # > Toggle
+Run
+Step Over
 ```
 
 ## Clean build folder
@@ -122,14 +131,6 @@ Find > Find
 
 ```
 Magnifying Glass Icon
-```
-
-## Debug
-
-```
-Line # > Toggle
-Run
-Step Over
 ```
 
 ## Rename
