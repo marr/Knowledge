@@ -14,9 +14,12 @@ git clone some-url
 
 ```shell
 git checkout some-main-branch
-git pull
+git pull [upstream main]
+git push
 git checkout -b some-branch
 ```
+
+- `upstream main` for forks.
 
 ## Check the local repository state
 
