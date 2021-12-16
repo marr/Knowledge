@@ -5,16 +5,16 @@
 - http://developer.apple.com/documentation/xcode.
 - http://developer.apple.com/videos/developer-tools.
 
-## Run code / tests
+## Run
 
 ```
-Line # > Play Icon
+Play Icon
 ```
 
-## View quick help
+## Navigate project files/groups
 
 ```
-Symbol > Option + Click
+Project Navigator
 ```
 
 ## View action menu
@@ -23,10 +23,16 @@ Symbol > Option + Click
 Symbol > Command + Click
 ```
 
-## Open quickly
+## View quick help
 
 ```
-File > Open Quickly
+Symbol > Option + Click
+```
+
+## Move forward/backward
+
+```
+Back/Forward Arrows
 ```
 
 ## Auto complete
@@ -50,10 +56,23 @@ View > Debug Area > Show Debug Area
 ## Debug
 
 ```
-View Hierarchy Button
 Line # > Toggle
 Run
 Step Over
+Breakpoint Navigator
+```
+
+## Find selected items
+
+```
+Select > Find > Find Selected Symbol in Workspace
+Select > Find > Find Selected Text in Workspace
+```
+
+## Navigate selected items
+
+```
+Select > Navigate > Reveal In Project Navigator
 ```
 
 ## Clean build folder
@@ -137,6 +156,13 @@ Magnifying Glass Icon
 
 ```
 Right Click > Refactor > Rename
+```
+
+## Run tests
+
+```
+Line # > Play Icon
+Test Navigator
 ```
 
 ## Create a unit test target
@@ -334,4 +360,16 @@ Home Screen > Long Press App Icon > Delete > Re-build
 
 ```
 Device > Erase All Content and Settings
+```
+
+## Inspect view hierarchy
+
+```
+Debug Area > View Hierarchy Button
+```
+
+## Open quickly
+
+```
+File > Open Quickly
 ```
