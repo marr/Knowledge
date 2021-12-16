@@ -10,7 +10,6 @@
 		9F25CBE227650DE5008CCBBC /* HTML.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = HTML.md; sourceTree = "<group>"; };
 		9F25CBE327651070008CCBBC /* JavaScript.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = JavaScript.md; sourceTree = "<group>"; };
 		9F25CBE427651304008CCBBC /* Shell.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Shell.md; sourceTree = "<group>"; };
-		9F25CBE5276516DA008CCBBC /* Vim.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Vim.md; sourceTree = "<group>"; };
 		9F6D149127641054009422E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F6D149327641541009422E7 /* CoreData.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CoreData.md; sourceTree = "<group>"; };
 		9F6D1494276416E9009422E7 /* Foundation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Foundation.md; sourceTree = "<group>"; };
@@ -50,7 +49,6 @@
 			isa = PBXGroup;
 			children = (
 				9F25CBE427651304008CCBBC /* Shell.md */,
-				9F25CBE5276516DA008CCBBC /* Vim.md */,
 				9F6D149E2764224A009422E7 /* Git.md */,
 				9F6D149B27642007009422E7 /* Curl.md */,
 				9F6D149D27642104009422E7 /* Markdown.md */,
