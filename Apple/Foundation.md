@@ -2,7 +2,7 @@
 
 ## Learn more
 
-- http://developer.apple.com/documentation/foundation.
+- http://developer.apple.com/documentation/foundation
 
 ## Create unique IDs
 

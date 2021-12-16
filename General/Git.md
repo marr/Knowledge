@@ -2,7 +2,7 @@
 
 ## Learn more
 
-- https://git-scm.com/docs.
+- https://git-scm.com/docs
 
 ## Clone a repository
 

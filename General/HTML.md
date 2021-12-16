@@ -2,7 +2,7 @@
 
 ## Learn more
 
-- https://html.spec.whatwg.org/.
+- https://html.spec.whatwg.org/
 
 ## Create a document
 

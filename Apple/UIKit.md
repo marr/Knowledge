@@ -2,4 +2,4 @@
 
 ## Learn more
 
-- https://developer.apple.com/documentation/uikit.
+- https://developer.apple.com/documentation/uikit

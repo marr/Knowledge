@@ -2,7 +2,7 @@
 
 ## Learn more
 
-- https://curl.se/docs/.
+- https://curl.se/docs/
 
 ## Transfer data with URLs
 

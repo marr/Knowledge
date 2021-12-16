@@ -2,7 +2,7 @@
 
 ## Learn more
 
-- https://developer.apple.com/documentation/coredata.
+- https://developer.apple.com/documentation/coredata
 
 ## Add persistence
 

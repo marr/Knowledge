@@ -2,8 +2,8 @@
 
 ## Learn more
 
-- http://developer.apple.com/documentation/xcode.
-- http://developer.apple.com/videos/developer-tools.
+- http://developer.apple.com/documentation/xcode
+- http://developer.apple.com/videos/developer-tools
 
 ## Run
 
