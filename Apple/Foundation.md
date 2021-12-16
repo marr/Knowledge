@@ -18,6 +18,20 @@ import Foundation
 let id = UUID()
 ```
 
+## Create URLs
+
+```
+URL
+```
+
+For example:
+
+```swift
+if let url = URL(string: "https://edge.ldscdn.org/mobile/interview/directory") {
+    // Use url
+}
+```
+
 ## Make HTTP requests to a URL
 
 ```
