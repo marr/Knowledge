@@ -37,10 +37,10 @@
 		9F6D149827641F76009422E7 /* Apple */ = {
 			isa = PBXGroup;
 			children = (
-				9F6D14952764174F009422E7 /* Swift.md */,
 				9F6D149727641E64009422E7 /* Xcode.md */,
-				9F6D1494276416E9009422E7 /* Foundation.md */,
+				9F6D14952764174F009422E7 /* Swift.md */,
 				9F6D149627641CCF009422E7 /* SwiftUI.md */,
+				9F6D1494276416E9009422E7 /* Foundation.md */,
 				9F6D149327641541009422E7 /* CoreData.md */,
 			);
 			path = Apple;
