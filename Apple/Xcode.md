@@ -5,11 +5,21 @@
 - http://developer.apple.com/documentation/xcode
 - http://developer.apple.com/videos/developer-tools
 
-## Run
+## Build/run
 
 ```
 Play Icon
 ```
+
+- Opens simulator by default.
+
+## Switch the active scheme
+
+```
+Scheme
+```
+
+- {Platform} > {Device}.
 
 ## Navigate project files/groups
 
@@ -62,6 +72,21 @@ Step Over
 Breakpoint Navigator
 ```
 
+## Find in project
+
+```
+Find > Find in Project
+Find Navigator
+Replace
+```
+
+## Find in file
+
+```
+Find > Find
+Replace
+```
+
 ## Find selected items
 
 ```
@@ -87,6 +112,18 @@ Product > Clean Build Folder
 File > Packages > Reset Package Caches
 ```
 
+## Clear app data in Simulator
+
+```
+Home Screen > Long Press App Icon > Delete > Re-build
+```
+
+## Clean all data in Simulator
+
+```
+Device > Erase All Content and Settings
+```
+
 ## Create projects
 
 ```
@@ -103,7 +140,7 @@ File > New > Project
 File > New > Playground
 ```
 
-## Create packages
+## Create project packages
 
 ```
 File > New > Package
@@ -134,28 +171,34 @@ File > New > Group
 File > Add Files to {Project}
 ```
 
-## Navigate between files
+## Open quickly
 
 ```
-Folder Icon
-```
-
-## Find / replace in file
-
-```
-Find > Find
-```
-
-## Find in project
-
-```
-Magnifying Glass Icon
+File > Open Quickly
 ```
 
 ## Rename
 
 ```
 Right Click > Refactor > Rename
+```
+
+## Upgrade syntax
+
+```
+Edit > Convert > Syntax
+```
+
+## View project documentation
+
+```
+Product > Build Documentation
+```
+
+## Add project documentation
+
+```
+Action Menu > Add Documentation
 ```
 
 ## Run tests
@@ -215,6 +258,21 @@ final class FormatBirthdateTests: XCTestCase {
         XCTAssertEqual(result, expected)
     }
 }
+```
+
+## Use package dependencies
+
+```
+{Project Name} > {Project Name} > Package Dependencies
+Plus/Minus Icon
+Row > Version Number
+```
+
+## Use build settings
+
+```
+{Project Name} > {Project Name} > Build Settings
+{Target}
 ```
 
 ## Create a UI test target
@@ -279,34 +337,16 @@ class LaunchTests: XCTestCase {
 }
 ```
 
-## Record performance baselines
-
-```
-Run Performance Test > Performance Result Icon > Set Baseline
-```
-
 ## Record interactions in UI tests
 
 ```
 Place Cursor Inside Test > Record Icon > {Do Interactions} > Stop Icon
 ```
 
-## Upgrade syntax
+## Record UI test performance baselines
 
 ```
-Edit > Convert > Syntax
-```
-
-## View project documentation
-
-```
-Product > Build Documentation
-```
-
-## Add project documentation
-
-```
-Action Menu > Add Documentation
+Run Performance Test > Performance Result Icon > Set Baseline
 ```
 
 ## Display UI canvas
@@ -314,14 +354,6 @@ Action Menu > Add Documentation
 ```
 Editor > Canvas
 ```
-
-## Switch the active scheme
-
-```
-Scheme
-```
-
-- {Platform} > {Device}.
 
 ## Add UI controls
 
@@ -336,40 +368,14 @@ Drag & Drop > Canvas / Code
 Canvas > Plus Icon
 ```
 
-## Toggle live preview
+## Toggle UI live preview
 
 ```
 Canvas > Play Icon
 ```
 
-## Build
-
-```
-Play Icon
-```
-
-- Opens simulator by default.
-
-## Clear app data in Simulator
-
-```
-Home Screen > Long Press App Icon > Delete > Re-build
-```
-
-## Clean all data in Simulator
-
-```
-Device > Erase All Content and Settings
-```
-
-## Inspect view hierarchy
+## Inspect UI view hierarchy
 
 ```
 Debug Area > View Hierarchy Button
-```
-
-## Open quickly
-
-```
-File > Open Quickly
 ```
