@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		9F25CBE227650DE5008CCBBC /* HTML.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = HTML.md; sourceTree = "<group>"; };
-		9F25CBE327651070008CCBBC /* JavaScript.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = JavaScript.md; sourceTree = "<group>"; };
 		9F25CBE427651304008CCBBC /* Shell.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Shell.md; sourceTree = "<group>"; };
 		9F6D149127641054009422E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F6D149327641541009422E7 /* CoreData.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CoreData.md; sourceTree = "<group>"; };
@@ -16,12 +14,9 @@
 		9F6D14952764174F009422E7 /* Swift.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Swift.md; sourceTree = "<group>"; };
 		9F6D149627641CCF009422E7 /* SwiftUI.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SwiftUI.md; sourceTree = "<group>"; };
 		9F6D149727641E64009422E7 /* Xcode.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Xcode.md; sourceTree = "<group>"; };
-		9F6D149A27641FBB009422E7 /* CSS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CSS.md; sourceTree = "<group>"; };
-		9F6D149B27642007009422E7 /* Curl.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Curl.md; sourceTree = "<group>"; };
-		9F6D149C2764203A009422E7 /* HTTP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = HTTP.md; sourceTree = "<group>"; };
 		9F6D149D27642104009422E7 /* Markdown.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Markdown.md; sourceTree = "<group>"; };
 		9F6D149E2764224A009422E7 /* Git.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Git.md; sourceTree = "<group>"; };
-		9FEA3512276BD572005D2D91 /* UIKit.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = UIKit.md; sourceTree = "<group>"; };
+		9FA09DB527739470007F47AB /* Web.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Web.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -42,7 +37,6 @@
 				9F6D149627641CCF009422E7 /* SwiftUI.md */,
 				9F6D1494276416E9009422E7 /* Foundation.md */,
 				9F6D149327641541009422E7 /* CoreData.md */,
-				9FEA3512276BD572005D2D91 /* UIKit.md */,
 			);
 			path = Apple;
 			sourceTree = "<group>";
@@ -52,12 +46,8 @@
 			children = (
 				9F25CBE427651304008CCBBC /* Shell.md */,
 				9F6D149E2764224A009422E7 /* Git.md */,
-				9F6D149B27642007009422E7 /* Curl.md */,
 				9F6D149D27642104009422E7 /* Markdown.md */,
-				9F6D149C2764203A009422E7 /* HTTP.md */,
-				9F25CBE227650DE5008CCBBC /* HTML.md */,
-				9F6D149A27641FBB009422E7 /* CSS.md */,
-				9F25CBE327651070008CCBBC /* JavaScript.md */,
+				9FA09DB527739470007F47AB /* Web.md */,
 			);
 			path = General;
 			sourceTree = "<group>";

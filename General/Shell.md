@@ -546,10 +546,10 @@ git tag v"$version"
 git push --tags
 ```
 
-## Edit text (vi/vim)
+## Edit text
 
 ```shell
-vim some-path
+vi[m]
 ```
 
 For example:
