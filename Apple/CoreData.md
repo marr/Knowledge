@@ -68,7 +68,7 @@ struct SomeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SomeView()
                 .environment(\.managedObjectContext, persistence.container.viewContext)
         }
     }
@@ -88,7 +88,7 @@ For example:
 import SwiftUI
 import CoreData
 
-struct ContentView: View {
+struct SomeView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -101,9 +101,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct SomeView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        SomeView()
             .environment(\.managedObjectContext, Persistence.preview.container.viewContext)
     }
 }
