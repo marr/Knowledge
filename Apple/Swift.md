@@ -36,13 +36,13 @@ var someName = someValue
 ## Use access control
 
 ```
-// Restricted to source files within the module
-// Default "internal"
-
-// Restricted to the file
+// Restrict to within the enclosing declaration
 private
 
-// Available outside the module as a public interface
+// Restrict to within the module (the default)
+[internal]
+
+// Allow outside the module
 public
 ```
 
@@ -62,7 +62,7 @@ public
 - `Int` for numbers without a fractional component.
 - `Double` for numbers with a fractional component.
 - `(SomeType, AnotherType)` for tuples.
-- `Void` for nothing.
+- `Void` for an empty tuple (no return value).
 - `?` for a value that might be `nil` (optional).
 
 ## Convert values to different types
@@ -100,45 +100,42 @@ func someFunction([someLabel] someParameter: SomeType [= SomeDefaultValue], [ano
 - `{ (someValue, anotherValue) in // body }`.
 - `{ // body }` with `$#` for arguments.
 
+## Create instances of structures or classes
+
+```swift
+var someInstance = SomeStructOrClass(someInitializerArgument: someValue, anotherInitializerArgument: anotherValue)
+```
+
+## Access instance properties of structures or classes
+
+```swift
+someInstance.someProperty = someValue
+```
+
+## Access instance methods of structures or classes
+
+```swift
+someInstance.someMethod()
+```
+
 ## Create structures
 
 ```
 struct SomeStruct {
-    // Constants / variables for properties
-    let someProperty: SomeType
-    let anotherProperty: AnotherType
-  
-    // Functions for methods
+    // Constants / variables for instance properties
+    // Functions for instance methods
 }
-```
-
-## Create instances of structs
-
-```swift
-var someStruct = SomeStruct(someProperty: someValue, anotherProperty: anotherValue)
-```
-
-## Access struct instance properties
-
-```swift
-someStruct.someProperty = someValue
-```
-
-## Access struct instance methods
-
-```swift
-someStruct.someMethod()
 ```
 
 ## Create classes
 
 ```
 [final] class SomeClass {
-    // Same as structs except shared by reference instead of copied by value
+    // Same as structs except shared by reference with inheritance instead of copied by value
 }
 ```
 
-- `final` stops inheritance.
+- `final` for preventing subclasses and overrides.
 
 ## Compare values
 
@@ -151,7 +148,7 @@ someStruct.someMethod()
 <=
 ```
 
-## Create enums
+## Create enumerations
 
 ```swift
 enum SomeEnum {
@@ -160,7 +157,7 @@ enum SomeEnum {
 }
 ```
 
-## Use enums
+## Use enumerations
 
 ```swift
 SomeEnum.someCase
