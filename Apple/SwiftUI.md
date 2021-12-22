@@ -278,16 +278,16 @@ Image(systemName: isPlaying ? "pause.circle" : "play.circle")
 ## Update state variables inside of views
 
 ```swift
-self.someName = someValue
+someName = someValue
 
-self.someBoolean.toggle()
+someBoolean.toggle()
 ```
 
 For example:
 
 ```swift
 Button(action: {
-    self.isPlaying.toggle()
+    isPlaying.toggle()
 }) {
     Image(systemName: isPlaying ? "pause.circle" : "play.circle")
 }
