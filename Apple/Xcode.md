@@ -5,6 +5,12 @@
 - http://developer.apple.com/documentation/xcode
 - http://developer.apple.com/videos/developer-tools
 
+## View developer documentation
+
+```
+Window > Developer Documentation
+```
+
 ## Build/run
 
 ```
@@ -16,10 +22,8 @@ Play Icon
 ## Switch the active scheme
 
 ```
-Scheme
+{Platform} > {Device}
 ```
-
-- {Platform} > {Device}.
 
 ## Navigate project files/groups
 
@@ -51,24 +55,18 @@ Back/Forward Arrows
 {type}<tab>[<tab>]
 ```
 
-## View library documentation
-
-```
-Window > Developer Documentation
-```
-
 ## Show debug area
 
 ```
 View > Debug Area > Show Debug Area
 ```
 
-## Debug
+## Use breakpoints
 
 ```
 Line # > Toggle
 Run
-Step Over
+Debug Area
 Breakpoint Navigator
 ```
 
@@ -275,6 +273,37 @@ Row > Version Number
 {Target}
 ```
 
+## Display UI canvas
+
+```
+Editor > Canvas
+```
+
+## Add UI controls
+
+```
+Toolbar > Plus Icon
+Drag & Drop > Canvas / Code
+```
+
+## Add UI previews
+
+```
+Canvas > Plus Icon
+```
+
+## Toggle UI live preview
+
+```
+Canvas > Play Icon
+```
+
+## Inspect UI view hierarchy
+
+```
+Debug Area > View Hierarchy Button
+```
+
 ## Create a UI test target
 
 ```
@@ -347,35 +376,4 @@ Place Cursor Inside Test > Record Icon > {Do Interactions} > Stop Icon
 
 ```
 Run Performance Test > Performance Result Icon > Set Baseline
-```
-
-## Display UI canvas
-
-```
-Editor > Canvas
-```
-
-## Add UI controls
-
-```
-Toolbar > Plus Icon
-Drag & Drop > Canvas / Code
-```
-
-## Add UI previews
-
-```
-Canvas > Plus Icon
-```
-
-## Toggle UI live preview
-
-```
-Canvas > Play Icon
-```
-
-## Inspect UI view hierarchy
-
-```
-Debug Area > View Hierarchy Button
 ```
