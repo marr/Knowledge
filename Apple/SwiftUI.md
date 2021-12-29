@@ -61,7 +61,7 @@ SomeView { ... }
 
 ```
 SomeView { ... }
-    .someModifier()
+.someModifier()
 ```
 
 For example:
@@ -146,7 +146,7 @@ AsyncImage(url: URL(string: someURL)) { image in
 } placeholder: {
     ProgressView()
 }
-    .aspectRatio(contentMode: .fit)
+.aspectRatio(contentMode: .fit)
 ```
 
 ## Add label views
