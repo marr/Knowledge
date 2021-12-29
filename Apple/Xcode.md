@@ -75,14 +75,15 @@ Breakpoint Navigator
 ```
 Find > Find in Project
 Find Navigator
-Replace
+Find/Replace
+Scope
 ```
 
 ## Find in file
 
 ```
 Find > Find
-Replace
+Find/Replace
 ```
 
 ## Find selected items
@@ -163,6 +164,12 @@ File > New > File
 File > New > Group
 ```
 
+## Change file targets
+
+```
+File Inspector > Target Membership
+```
+
 ## Add existing files
 
 ```
@@ -239,21 +246,15 @@ import XCTest
 
 final class FormatBirthdateTests: XCTestCase {
     func testConvertsValidBirthdates() {
-        let result = formatBirthdate(date: "1900-01-23")
-        let expected = "01/23/1900"
-        XCTAssertEqual(result, expected)
+        XCTAssertEqual(formatBirthdate(date: "1900-01-23"), "01/23/1900")
     }
-    
+
     func testHasEmptyStringForInvalidFormatting() {
-        let result = formatBirthdate(date: "1-2-1903")
-        let expected = ""
-        XCTAssertEqual(result, expected)
+        XCTAssertEqual(formatBirthdate(date: "1-2-1903"), "")
     }
-    
+
     func testHasEmptyStringForInvalidDates() {
-        let result = formatBirthdate(date: "1900-23-23")
-        let expected = ""
-        XCTAssertEqual(result, expected)
+        XCTAssertEqual(formatBirthdate(date: "1900-23-23"), "")
     }
 }
 ```
