@@ -73,7 +73,7 @@ For example:
 .foregroundColor(.red)
 .aspectRatio(contentMode: .fit)
 .cornerRadius(5)
-.onAppear() {
+.onAppear {
     // ...
 }
 ```
