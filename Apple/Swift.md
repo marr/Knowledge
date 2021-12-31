@@ -188,7 +188,7 @@ enum SomeEnum {
     case anotherCase
 }
 
-let someValue = .someCase
+let someValue = SomeEnum.someCase
 
 switch someValue {
 case .someCase:
@@ -497,7 +497,7 @@ enum VendingMachineError: Error {
     case outOfStock
 }
 
-throw .insufficientFunds(coinsNeeded: 5)
+throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
 ```
 
 ## Handle functions that can throw runtime errors
