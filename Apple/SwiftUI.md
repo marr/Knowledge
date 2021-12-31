@@ -206,6 +206,24 @@ HStack {
 }
 ```
 
+## Add z stack views
+
+```swift
+ZStack {
+    // Views
+}
+```
+
+For example:
+
+```swift
+ZStack {
+    Color.purple
+        .ignoresSafeArea()
+    Text("Some item")
+}
+```
+
 ## Add list views
 
 ```
