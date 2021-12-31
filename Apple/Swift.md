@@ -171,8 +171,8 @@ case somePattern:
     // ...
 case anotherPattern:
     // ...
-default:
-    // ...
+[default:
+    // ...]
 }
 ```
 
