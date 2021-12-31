@@ -160,7 +160,7 @@ enum SomeEnum {
 ## Use enumerations
 
 ```swift
-SomeEnum.someCase
+[SomeEnum].someCase
 ```
 
 ## Add switch statements
@@ -178,7 +178,6 @@ default:
 
 - `someValue`.
 - `someValue, anotherValue`.
-- `.someEnumCase`.
 - `let someValue where // matching conditions`.
 
 For example:
@@ -189,7 +188,7 @@ enum SomeEnum {
     case anotherCase
 }
 
-let someValue = SomeEnum.someCase
+let someValue = .someCase
 
 switch someValue {
 case .someCase:
@@ -498,7 +497,7 @@ enum VendingMachineError: Error {
     case outOfStock
 }
 
-throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
+throw .insufficientFunds(coinsNeeded: 5)
 ```
 
 ## Handle functions that can throw runtime errors
