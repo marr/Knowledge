@@ -278,6 +278,7 @@ Row > Version Number
 
 ```
 Editor > Canvas
+UI Inspector
 ```
 
 ## Add UI controls
@@ -303,6 +304,7 @@ Canvas > Play Icon
 
 ```
 Debug Area > View Hierarchy Button
+Orient to 3D
 ```
 
 ## Create a UI test target
