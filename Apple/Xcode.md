@@ -267,6 +267,20 @@ Plus/Minus Icon
 Row > Version Number
 ```
 
+## Temporarily override package dependencies
+
+```
+Finder > Drag and drop the source under the project
+Make and test changes
+Remove the reference
+```
+
+## Update package dependencies
+
+```
+Right Click > Update Package
+```
+
 ## Use build settings
 
 ```
