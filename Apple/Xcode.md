@@ -102,7 +102,7 @@ Select > Navigate > Reveal In Project Navigator
 ## Clean build folder
 
 ```
-Product > Clean Build Folder
+Product > Clean Build Folder > Restart Xcode
 ```
 
 ## Reset package caches
@@ -111,16 +111,22 @@ Product > Clean Build Folder
 File > Packages > Reset Package Caches
 ```
 
-## Clear app data in Simulator
+## Delete derived data
 
 ```
-Home Screen > Long Press App Icon > Delete > Re-build
+Preferences > Locations > Open Derived Data Path In Finder > Close Xcode > Delete Derived Data Content > Restart Xcode > File > Packages > Resolve Package Versions
 ```
 
-## Clean all data in Simulator
+## Delete device app data
 
 ```
-Device > Erase All Content and Settings
+Simulator > Home Screen > Long Press App Icon > Delete
+```
+
+## Erase device data / settings
+
+```
+Simulator > Device > Erase All Content and Settings
 ```
 
 ## Create projects
