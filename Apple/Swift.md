@@ -103,7 +103,7 @@ func someFunction([someLabel] someParameter: SomeType [= SomeDefaultValue], [ano
 ## Create instances of structures or classes
 
 ```swift
-var someInstance = SomeStructOrClass(someInitializerArgument: someValue, anotherInitializerArgument: anotherValue)
+var someInstance = SomeStructOrClass(someArgument: someValue, anotherArgument: anotherValue)
 ```
 
 ## Access instance properties of structures or classes
@@ -122,8 +122,12 @@ someInstance.someMethod()
 
 ```
 struct SomeStruct {
-    // Constants / variables for instance properties
     // Functions for instance methods
+    // Constants / variables for instance properties (stored)
+    // Variables with { expression } for instance properties (computed)
+    // @SomePropertyWrapper for property wrappers
+    // self for the instance itself - used by default when using a property / method name within a method like [self.]someProperty
+    // init() to customize initialization
 }
 ```
 
@@ -131,7 +135,7 @@ struct SomeStruct {
 
 ```
 [final] class SomeClass {
-    // Same as structs except shared by reference with inheritance instead of copied by value
+    // Same as structs except reference instead of value
 }
 ```
 
@@ -304,60 +308,6 @@ someCollection[someKey]
 
 - Index number for arrays.
 
-## Iterate over items in collections
-
-```swift
-for someItem in someCollection {
-    // ...
-}
-```
-
-- Elements for arrays or sets.
-- `(someKey, someValue)` key-value pairs for dictionaries.
-- Characters for strings.
-
-## Transform items in collections
-
-```
-someCollection.map({ // ... })
-```
-
-## Filter items in collections
-
-```
-someCollection.filter({ // ... })
-```
-
-## Split items in collections
-
-```swift
-someCollection.split(separator: someValue)
-```
-
-## Join items in collections
-
-```swift
-someCollection.joined(separator: someValue)
-```
-
-## Sort items in collections
-
-```swift
-someCollection.sort()
-```
-
-## Reverse items in collections
-
-```swift
-someCollection.reverse()
-```
-
-## Check if collections contain an item
-
-```swift
-someCollection.contains(someValue)
-```
-
 ## Check if collections are empty
 
 ```swift
@@ -370,17 +320,17 @@ someCollection.isEmpty
 someCollection.count
 ```
 
-## Get the first item in collections
+## Iterate over items in collections
 
 ```swift
-someCollection.first
+for someItem in someCollection {
+    // ...
+}
 ```
 
-## Get the last item in collections
-
-```swift
-someCollection.last
-```
+- Elements for arrays or sets.
+- `(someKey, someValue)` key-value pairs for dictionaries.
+- Characters for strings.
 
 ## Get a random item in collections
 
@@ -392,6 +342,60 @@ someCollection.randomElement()
 
 ```swift
 [someValue, anotherValue]
+```
+
+## Map items in arrays
+
+```
+someCollection.map({ // ... })
+```
+
+## Filter items in arrays
+
+```
+someCollection.filter({ // ... })
+```
+
+## Split items in arrays
+
+```swift
+someCollection.split(separator: someValue)
+```
+
+## Join items in arrays
+
+```swift
+someCollection.joined(separator: someValue)
+```
+
+## Sort items in arrays
+
+```swift
+someCollection.sort()
+```
+
+## Reverse items in arrays
+
+```swift
+someCollection.reversed()
+```
+
+## Check if arrays contain an item
+
+```swift
+someCollection.contains(someValue)
+```
+
+## Get the first item in arrays
+
+```swift
+someCollection.first
+```
+
+## Get the last item in arrays
+
+```swift
+someCollection.last
 ```
 
 ## Create literal sets
@@ -514,6 +518,29 @@ do {
 } catch {
     // An error was thrown
 }
+```
+
+## Use protocols
+
+```
+SomeType: SomeProtocol, AnotherProtocol
+```
+
+For example:
+
+```swift
+struct Ocean: Identifiable {
+    let name: String
+    let id = UUID()
+}
+
+let oceans = [
+    Ocean(name: "Pacific"),
+    Ocean(name: "Atlantic"),
+    Ocean(name: "Indian"),
+    Ocean(name: "Southern"),
+    Ocean(name: "Arctic")
+]
 ```
 
 ## Create a task
