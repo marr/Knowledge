@@ -51,28 +51,23 @@ struct SomeView: View {
 SomeView { ... }
 ```
 
-## Add conditional UI inside of views
-
-```
-// if / switch
-```
-
-## Add a modifier to a view
+## Use view modifiers
 
 ```
 SomeView { ... }
-.someModifier()
+.someViewModifier()
+
+SomeView()
+    .someViewModifier()
 ```
 
 For example:
 
 ```
-.navigationTitle("Some title)
+SomeView { ... }
 .padding()
-.font(.title)
-.foregroundColor(.red)
-.aspectRatio(contentMode: .fit)
-.cornerRadius(5)
+.background(.green)
+.opacity(0.5)
 .onAppear {
     // ...
 }
@@ -116,6 +111,16 @@ TabView {
 Text("Some text")
 ```
 
+For example:
+
+```swift
+Text("Some text")
+    .font(.title)
+    .foregroundColor(.red)
+    .italic()
+    .lineLimit(1)
+```
+
 ## Add progress views
 
 ```swift
@@ -125,7 +130,19 @@ ProgressView()
 ## Add image views
 
 ```swift
-Image(systemName: "someSFSymbol")
+Image(...)
+```
+
+- `systemName: "someSFSymbol"` for vector system images.
+- `"some-file"` for raster images.
+
+For example:
+
+```swift
+Image("SomeImage")
+    .resizable()
+    .aspectRatio(contentMode: .fit)
+    .cornerRadius(5)
 ```
 
 ## Add async image views
@@ -173,6 +190,36 @@ Button(action: someAction) {
 Button(action: someAction) {
     Text("Some text")
 }
+.disabled
+.alert("Some alert", isPresented: $someName) {
+    Button("Ok", role: .cancel) { }
+}
+.sheet(isPresented: $someName) {
+    // Views
+}
+```
+
+## Add menu views
+
+```
+Menu("Some menu") {
+    // Views
+}
+```
+
+For example: 
+
+```
+Menu("Some menu") {
+    Button(...)
+    Button(...)
+}
+```
+
+## Add toggle views
+
+```swift
+Toggle("Some label", isOn: $someName)
 ```
 
 ## Add text field views
@@ -269,11 +316,81 @@ ForEach(items) { item in
 Spacer()
 ```
 
-## Create state variables inside of views
+## Add section views
+
+```swift
+Section(header: // Views) {
+    // Views
+}
+```
+
+For example:
+
+```swift
+ForEach(items) { item in
+    Section(header: Text(item.title)) {
+        // Views
+    })
+}
+```
+
+## Use ObservableObject
 
 ```
-@State // Variable
+SomeClass: ObservableObject {
+    // @Published on properties to expose external data that can change
+}
 ```
+
+## Use @ObservedObject
+
+```
+struct SomeView: View {
+    // @ObservedObject on properties to subscribe to published changes of observable objects
+    
+    var body: some View {
+        // Views
+    }
+}
+```
+
+## Use @EnvironmentObject
+
+```
+struct SomeView: View {
+    // @EnvironmentObject on properties to gain access to observable objects stored in the environment
+    
+    var body: some View {
+        // Views
+    }
+}
+```
+
+## Use @Binding
+
+```
+struct SomeView: View {
+    // @Binding on properties to share write access without taking ownership - derive with $ like $someProperty
+    
+    var body: some View {
+        // Views
+    }
+}
+```
+
+## Use @State
+
+```
+struct SomeView: View {
+    // @State on properties to create transient state local to views
+    
+    var body: some View {
+        // Views
+    }
+}
+```
+
+- `private` recommended to keep local.
 
 For example:
 
@@ -281,61 +398,7 @@ For example:
 @State private var someName = someValue
 ```
 
-## Use state variables inside of views
-
-```
-someName
-```
-
-For example:
-
-```swift
-Image(systemName: isPlaying ? "pause.circle" : "play.circle")
-```
-
-## Update state variables inside of views
-
-```swift
-someName = someValue
-
-someBoolean.toggle()
-```
-
-For example:
-
-```swift
-Button(action: {
-    isPlaying.toggle()
-}) {
-    Image(systemName: isPlaying ? "pause.circle" : "play.circle")
-}
-```
-
-## Bind to state variables inside of views
-
-```
-$someName
-```
-
-For example:
-
-```swift
-TextField("Username", text: $username)
-```
-
-## Use binding arguments inside of views
-
-```
-@Binding // Variable
-```
-
-For example:
-
-```swift
-@Binding var someName: SomeType
-```
-
-## Add previews
+## Add previews for views
 
 ```
 SomeView { ... }
