@@ -292,6 +292,9 @@ List {
 List(items) { item in
     Text(item.text)
 }
+.refreshable {
+    // Use await for indicator duration
+}
 ```
 
 ## Add for each views
