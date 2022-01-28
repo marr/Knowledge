@@ -6,20 +6,35 @@
 
 ## Clone a repository
 
-```shell
+```
 git clone some-url
+[git remote add some-remote some-url]
+```
+
+For example:
+
+```shell
+git clone git@github.com:some-user/some-repository.git
+git remote add upstream git@github.com:another-user/some-repository.git
 ```
 
 ## Create a feature branch
 
-```shell
+```
 git checkout some-main-branch
-git pull [upstream main]
-git push
+git pull [some-remote some-main-branch]
+[git push]
 git checkout -b some-branch
 ```
 
-- `upstream main` for forks.
+For example:
+
+```shell
+git checkout main
+git pull upstream main
+git push
+git checkout -b some-branch
+```
 
 ## Check the local repository state
 
@@ -38,14 +53,13 @@ git add [-p] some-paths
 ## Save changes in the staging area to commits
 
 ```
-git commit [-m "Some message"] [--amend]
+git commit [-m "Some message"]
 ```
 
 - Opens in default editor.
 - Add commit message to top line with optional body below.
 - Save file and exit to finish commit.
 - `-m` for quick message.
-- `--amend` to change the last commit which requires `-f` to push to an existing remote feature branch because it rewrites the last feature branch commit.
 
 ## Save changes in the staging area temporarily
 
@@ -57,7 +71,7 @@ git stash show
 git stash apply
 ```
 
-## Save changes in commits to the remote repository
+## Save changes in commits to remote repositories
 
 ```shell
 git push
@@ -67,12 +81,19 @@ git push
 
 ```
 git checkout some-branch
-git fetch
-git {merge/rebase} origin/some-target-branch
-git push [-f]
+git fetch [some-remote some-main-branch]
+git merge [some-remote/some-main-branch]
+git push
 ```
 
-- Rebasing requires `-f` because it rewrites the feature branch commits on top of the commits from the target branch.
+For example:
+
+```shell
+git checkout some-branch
+git fetch upstream main
+git merge upstream/main
+git push
+```
 
 ## Show diff
 
@@ -178,7 +199,7 @@ git bisect bad/good
 git bisect reset
 ```
 
-## Tag the current repo state
+## Add version tags
 
 ```
 git tag vX.Y.Z
