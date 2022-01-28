@@ -25,10 +25,35 @@ Play Icon
 {Platform} > {Device}
 ```
 
+## View reports
+
+```
+Report Navigator
+```
+
+## View issues
+
+```
+Issue Navigator
+```
+
 ## Navigate project files/groups
 
 ```
 Project Navigator
+Breadcrumbs
+```
+
+## Navigate symbols inside a file
+
+```
+Breadcrumbs > Symbols
+```
+
+## Pin files
+
+```
+File > Double Click
 ```
 
 ## View action menu
@@ -68,6 +93,13 @@ Line # > Toggle
 Run
 Debug Area
 Breakpoint Navigator
+Column > Command + Click > Set Column Breakpoint
+```
+
+## Address inline errors/warnings
+
+```
+Click > [Fix]
 ```
 
 ## Find in project
@@ -84,6 +116,12 @@ Scope
 ```
 Find > Find
 Find/Replace
+```
+
+## Use matching braces
+
+```
+Brace > Double Click
 ```
 
 ## Find selected items
@@ -191,7 +229,7 @@ File > Open Quickly
 ## Rename
 
 ```
-Right Click > Refactor > Rename
+Right Click > Refactor > Rename > [Toggle] > Rename
 ```
 
 ## Upgrade syntax
@@ -244,6 +282,9 @@ final class SomeThingTests: XCTestCase {
 }
 ```
 
+- `XCTAssertEqual(someValue, anotherValue)` for input/output comparisons.
+- `XCTUnwrap(someOptional)` for setup optionals.
+
 For example:
 
 ```swift
@@ -292,6 +333,12 @@ Right Click > Update Package
 ```
 {Project Name} > {Project Name} > Build Settings
 {Target}
+```
+
+## Use build phases
+
+```
+{Project Name} > {Target} > Build Phases.
 ```
 
 ## Display UI canvas
