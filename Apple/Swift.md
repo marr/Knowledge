@@ -623,11 +623,13 @@ if #available(iOS 10, macOS 10.12, *) {
 }
 ```
 
-## Mark availability 
+## Mark availability
 
 ```
 @available(someAvailability, anotherAvailability, *)
 ```
+
+- Can be versions / `renamed` / `deprecated`.
 
 For example:
 
@@ -639,5 +641,18 @@ func someFunction() {
 
 func someFunction() {
     // ...
+}
+
+@available(*, renamed: "anotherFunction()")
+func anotherFunction(completion: @escaping (Result<SomeType, Error>) -> Void) {
+    // ...
+}
+
+func anotherFunction() async throws -> SomeType {
+    return try await withCheckedThrowingContinuation { continuation in
+        anotherFunction() { result in
+            continuation.resume(with: result)
+        }
+    }
 }
 ```
