@@ -226,6 +226,12 @@ File > Add Files to {Project}
 File > Open Quickly
 ```
 
+## Refactor
+
+```
+Right Click > Refactor
+```
+
 ## Rename
 
 ```
@@ -247,7 +253,7 @@ Product > Build Documentation
 ## Add project documentation
 
 ```
-Action Menu > Add Documentation
+Editor > Structure > Add Documentation
 ```
 
 ## Run tests
@@ -283,7 +289,7 @@ final class SomeThingTests: XCTestCase {
 ```
 
 - `XCTAssertEqual(someValue, anotherValue)` for input/output comparisons.
-- `XCTUnwrap(someOptional)` for setup optionals.
+- `XCTUnwrap(someOptional)` for optionals.
 
 For example:
 
