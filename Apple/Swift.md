@@ -91,6 +91,74 @@ func someFunction([someLabel] someParameter: SomeType [= SomeDefaultValue], [ano
 - `try` if function has `throws`.
 - `await` if function has `async`.
 
+## Throw runtime errors
+
+```swift
+throw SomeError
+```
+
+For example:
+
+```swift
+enum VendingMachineError: Error {
+    case invalidSelection
+    case insufficientFunds(coinsNeeded: Int)
+    case outOfStock
+}
+
+throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
+```
+
+## Use a do-catch statement
+
+```swift
+do {
+    try someFunction()
+    // No error was thrown
+} catch {
+    // An error was thrown
+    // Can use "error"
+}
+```
+
+## Use optional chaining operators
+
+```
+?
+```
+
+For example:
+
+``` 
+someOptional?.someMethod
+try? someFunction()
+```
+
+## Use nil-coalescing operators
+
+```
+??
+```
+
+For example:
+
+```swift
+someOptional ?? someDefaultValue
+```
+
+## Use forced unwrap operators
+
+```
+!
+```
+
+For example:
+
+```
+// Can fail at runtime
+someOptional!
+```
+
 ## Use closure expressions
 
 ```
@@ -123,8 +191,8 @@ someInstance.someMethod()
 ```
 struct SomeStruct {
     // Functions for instance methods
-    // Constants / variables for instance properties (stored)
-    // Variables with { expression } for instance properties (computed)
+    // Constants / variables for stored instance properties
+    // Variables with { expression } for computed instance properties
     // @SomePropertyWrapper for property wrappers
     // self for the instance itself - used by default when using a property / method name within a method like [self.]someProperty
     // init() to customize initialization
@@ -141,17 +209,6 @@ struct SomeStruct {
 
 - `final` for preventing subclasses and overrides.
 
-## Compare values
-
-```
-==
-!=
->
-<
->=
-<=
-```
-
 ## Create enumerations
 
 ```swift
@@ -167,22 +224,20 @@ enum SomeEnum {
 [SomeEnum].someCase
 ```
 
-## Add switch statements
+## Add switch conditions
 
 ```swift
-switch someCondition {
-case somePattern:
+switch someValue {
+case [let] someCondition[,] [let anotherCondition]:
     // ...
-case anotherPattern:
-    // ...
+[case anotherCondition:
+    // ...]
 [default:
     // ...]
 }
 ```
 
-- `someValue`.
-- `someValue, anotherValue`.
-- `let someValue where // matching conditions`.
+- `let` for optional binding.
 
 For example:
 
@@ -202,42 +257,56 @@ case .anotherCase:
 }
 ```
 
-## Add if/else blocks
+## Add guard conditions
+
+```swift 
+guard [let] someCondition[,]
+      [let anotherCondition]
+else {
+    // ...
+}
+```
+
+- `let` for optional binding.
+
+## Add if/else conditions
 
 ```
 if [let] someCondition[,]
    [let anotherCondition] {
     // ...
-} else if anotherCondition {
+} [else if anotherCondition {
     // ...
-} else {
+}] [else {
     // ...
-}
+}]
 ```
 
-- `let` for optional bindings.
+- `let` for optional binding.
 
-## Add guards
-
-```swift
-guard someCondition else {
-    // ...
-}
-// Continues when someCondition was met
-```
-
-## Add ternary logic
+## Add ternary conditions
 
 ```swift
 someCondition ? someValue : anotherValue
 ```
 
-## Create while loops
+## Create while loop conditions
 
 ```swift
 while someCondition {
     // ...
 }
+```
+
+## Compare values
+
+```
+==
+!=
+>
+<
+>=
+<=
 ```
 
 ## Create literal strings
@@ -453,73 +522,6 @@ let (someValue, anotherValue) = someTuple
 someTuple.someValue
 ```
 
-## Use optional values
-
-```
-// Optional binding
-if let someValue = someOptional {
-    // Use someValue
-    // ...
-} [else {
-    // Handle missing
-    // ...
-}]
-
-// Guard
-guard let someValue = someOptional else {
-    // Handle missing
-    // ...
-}
-// Use someValue
-// ...
-
-// Optional chaining operator
-someOptional?.someMethod
-
-// Nil-coalescing operator 
-someOptional ?? someDefaultValue
-
-// Can fail at runtime so confirm first
-if someOptionalValue != nil {
-    // Forced unwrap operator
-    someOptional!
-}
-```
-
-## Throw runtime errors
-
-```swift
-throw SomeError
-```
-
-For example:
-
-```swift
-enum VendingMachineError: Error {
-    case invalidSelection
-    case insufficientFunds(coinsNeeded: Int)
-    case outOfStock
-}
-
-throw VendingMachineError.insufficientFunds(coinsNeeded: 5)
-```
-
-## Handle functions that can throw runtime errors
-
-```swift
-func someFunction() throws {
-    // Might throw an error
-    // ...
-}
-
-do {
-    try someFunction()
-    // No error was thrown
-} catch {
-    // An error was thrown
-}
-```
-
 ## Use protocols
 
 ```
@@ -546,6 +548,7 @@ let oceans = [
 ## Create a task
 
 ```swift
+// Some synchronous top-level
 Task {
     // Some asynchronous code
 }
@@ -596,7 +599,7 @@ For example:
 Array(someArray[0...42])
 
 for name in names[42...] {
-    //  …
+    // ...
 }
 
 for i in 1...10 {
@@ -604,18 +607,37 @@ for i in 1...10 {
 }
 ```
 
-## Add availability conditions
+## Check availability
 
 ```
-#available(someCondition, anotherCondition, *)
+#available(someAvailability, anotherAvailability, *)
 ```
 
 For example:
 
 ```swift
 if #available(iOS 10, macOS 10.12, *) {
-    // Use iOS 10 APIs on iOS, and use macOS 10.12 APIs on macOS
+    // ...
 } else {
-    // Fall back to earlier APIs
+    // ...
+}
+```
+
+## Mark availability 
+
+```
+@available(someAvailability, anotherAvailability, *)
+```
+
+For example:
+
+```swift
+@available(iOS 10, macOS 10.12, *)
+func someFunction() {
+    // ...
+}
+
+func someFunction() {
+    // ...
 }
 ```
