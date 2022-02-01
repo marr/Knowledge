@@ -146,19 +146,6 @@ For example:
 someOptional ?? someDefaultValue
 ```
 
-## Use forced unwrap operators
-
-```
-!
-```
-
-For example:
-
-```
-// Can fail at runtime
-someOptional!
-```
-
 ## Use closure expressions
 
 ```
@@ -334,18 +321,6 @@ string
 
 ```
 someString.hasPrefix/hasSuffix(anotherString)
-```
-
-## Use encoded data in strings
-
-```
-String(data: someData, encoding: .someEncoding)
-```
-
-For example:
-
-```swift
-print(String(data: someJSON, encoding: .utf8)!)
 ```
 
 ## Create literal characters
