@@ -67,7 +67,12 @@ For example:
 SomeView { ... }
 .padding()
 .background(.green)
+.border(.blue)
 .opacity(0.5)
+.frame(width: 100)
+.task {
+    // ...
+}
 .onAppear {
     // ...
 }
@@ -116,9 +121,10 @@ For example:
 ```swift
 Text("Some text")
     .font(.title)
-    .foregroundColor(.red)
+    .bold()
     .italic()
     .lineLimit(1)
+    .foregroundColor(.red)
 ```
 
 ## Add progress views
@@ -298,6 +304,9 @@ List(items) { item in
     Text(item.text)
 }
 .refreshable {
+    // Use await for indicator duration
+}
+.task {
     // Use await for indicator duration
 }
 ```
