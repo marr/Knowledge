@@ -13,9 +13,7 @@ UUID
 For example:
 
 ```swift
-import Foundation
-
-let id = UUID()
+let someID = UUID()
 ```
 
 ## Create URLs
@@ -27,12 +25,13 @@ URL
 For example:
 
 ```swift
-if let url = URL(string: "https://edge.ldscdn.org/mobile/interview/directory") {
-    // Use url
+guard let someURL = URL(string: "https://someurl")
+else {
+    // ...
 }
 ```
 
-## Make HTTP requests to a URL
+## Make HTTP requests
 
 ```
 URLSession
@@ -41,17 +40,7 @@ URLSession
 For example:
 
 ```swift
-import Foundation
-
-func someRequest() async throws {
-    guard let url = URL(string: "https://someurl") else {
-        // ...
-    }
-    
-    let (data, _) = try await URLSession.shared.data(from: url)
-    
-    // Use data
-}
+let (someData, someResponse) = try await URLSession.shared.data(from: someURL)
 ```
 
 ## Decode JSON
@@ -63,32 +52,69 @@ JSONDecoder
 For example:
 
 ```swift
-import Foundation
+struct SomeOutput: Codable {
+    let someKey: Int
+    let anotherKey: String
+}
 
-struct SomeService {
-    enum ServiceError: Error {
-        case brokenURL
-        case missingData
-    }
+let someJSON = """
+{
+    "someKey": 42,
+    "anotherKey": "Hello world"
+}
+"""
+
+guard let someData = someJSON.data(using: .utf8)
+else {
+    // ...
+}
+
+let someOutput = try JSONDecoder().decode(SomeOutput.self, from: someData)
+```
+
+## Use a JSON service
+
+```
+URLSession + JSONDecoder
+```
+
+For example:
+
+```swift
+struct SomeOutput: Codable {
+    let someKey: Int
+    let anotherKey: String
+}
+
+enum SomeError: Error {
+    case brokenURL
+    case unsuccessfulResponse
+    case missingData
+}
+
+func someRequest() async {
+    do {
+        guard let someURL = URL(string: "https://someurl") 
+        else {
+            throw SomeError.brokenURL
+        }
+        
+        let (someData, someResponse) = try await URLSession.shared.data(from: someURL)
+        
+        guard (someResponse as? HTTPURLResponse)?.statusCode == 200
+        else { 
+            throw SomeError.unsuccessfulResponse
+        }
+        
+        if someData.isEmpty {
+            throw SomeError.missingData
+        }
+        
+        let someOutput = try JSONDecoder().decode(SomeOutput.self, from: someData)
     
-    struct SomeResults: Codable {
         // ...
-    }
-    
-    func someRequest() async throws {
-        guard let url = URL(string: "https://someurl") else {
-            throw ServiceError.brokenURL
-        }
-        
-        let (data, _) = try await URLSession.shared.data(from: url)
-        
-        if data.isEmpty {
-            throw ServiceError.missingData
-        }
-        
-        let someResults = try JSONDecoder().decode(SomeResults.self, from: data)
-    
-        // Use someResults
+    } catch {
+        // ...
     }
 }
 ```
