@@ -148,6 +148,8 @@ Image("SomeImage")
 ## Add async image views
 
 ```swift
+AsyncImage(url: URL(string: someURL))
+
 AsyncImage(url: URL(string: someURL)) { image in
     // ...
 } placeholder: {
@@ -158,7 +160,10 @@ AsyncImage(url: URL(string: someURL)) { image in
 For example:
 
 ```swift
-AsyncImage(url: URL(string: someURL)) { image in
+AsyncImage(url: URL(string: "https://example.com/icon.png"))
+    .frame(width: 200, height: 200)
+
+AsyncImage(url: URL(string: "https://example.com/icon.png")) { image in
     image.resizable()
 } placeholder: {
     ProgressView()
