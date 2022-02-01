@@ -529,6 +529,41 @@ Task {
 }
 ```
 
+## Use async-let
+
+```swift
+async let someOutput = someFunction()
+
+await someOutput
+```
+
+```swift
+async let someOutput = someFunction()
+async let anotherOutput = anotherFunction()
+
+let allOutput = await [someOutput, anotherOutput]
+```
+
+## Use withTaskGroup
+
+```
+await withTaskGroup(of: SomeType.self) { taskGroup in
+    taskGroup.addTask {
+        // ...
+    }
+}
+```
+
+For example:
+
+```swift
+await withTaskGroup(of: SomeType.self) { taskGroup in
+    for someItem in someCollection {
+        taskGroup.addTask { await someFunction(someItem) }
+    }
+}
+```
+
 ## Add comments
 
 ```swift
