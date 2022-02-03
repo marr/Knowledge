@@ -394,6 +394,12 @@ someCollection.randomElement()
 someCollection.map({ // ... })
 ```
 
+## Compact map items in arrays
+
+```
+someCollection.compactMap({ // ... })
+```
+
 ## Filter items in arrays
 
 ```
