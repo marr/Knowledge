@@ -441,6 +441,39 @@ For example:
 @State private var someName = someValue
 ```
 
+## Use view builders
+
+```
+struct SomeView: View {
+    // @ViewBuilder on properties to create views from closures
+    
+    var body: some View {
+        // Views
+    }
+}
+```
+
+- `private` recommended to keep local.
+
+For example:
+
+```swift
+struct SomeView: View {
+    var body: some View {
+        someSection
+        anotherSection
+    }
+    
+    @ViewBuilder private var someSection: some View {
+        // Views
+    }
+
+    @ViewBuilder private var anotherSection: some View {
+        // Views
+    }
+}
+```
+
 ## Add previews for views
 
 ```
