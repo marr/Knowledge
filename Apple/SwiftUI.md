@@ -351,6 +351,32 @@ Toggle("Some label", isOn: $someValue)
 TextField("Some label", text: $someValue)
 ```
 
+## Add picker views
+
+```
+Picker("Some label", selection: $someValue) {
+    // Views
+}
+```
+
+For example: 
+
+```
+List {
+    Picker("Some label", selection: $someValue) {
+        ForEach(SomeEnum.allCases) {
+            Text($0.label)
+        }
+    }
+}
+
+Picker("Some label", selection: $someValue) {
+    Text("Some text").tag(0)
+    Text("Another text").tag(1)
+}
+.pickerStyle(.segmented)
+```
+
 ## Use ObservableObject
 
 ```
