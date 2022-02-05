@@ -249,7 +249,7 @@ For example:
 ZStack {
     Color.purple
         .ignoresSafeArea()
-    Text("Some item")
+    Text("Some text")
 }
 ```
 
@@ -267,8 +267,8 @@ For example:
 
 ```swift
 List {
-    Text("Some item")
-    Text("Another item")
+    Text("Some text")
+    Text("Another text")
 }
 
 List(items) { item in
@@ -325,7 +325,7 @@ ForEach(items) { item in
 ## Add menu views
 
 ```
-Menu("Some menu") {
+Menu("Some label") {
     // Views
 }
 ```
@@ -333,7 +333,7 @@ Menu("Some menu") {
 For example: 
 
 ```
-Menu("Some menu") {
+Menu("Some label") {
     Button(...)
     Button(...)
 }
