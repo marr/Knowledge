@@ -31,10 +31,11 @@ Play Icon
 Report Navigator
 ```
 
-## View issues
+## View errors/warnings
 
 ```
 Issue Navigator
+Breadcrumbs > Error/Warning Icon
 ```
 
 ## Navigate project files/groups
