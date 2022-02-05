@@ -331,6 +331,18 @@ string
 someString.hasPrefix/hasSuffix(anotherString)
 ```
 
+## Uppercase strings
+
+```swift
+someString.uppercased
+```
+
+## Lowercase strings
+
+```swift
+someString.lowercased
+```
+
 ## Create literal characters
 
 ```
