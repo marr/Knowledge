@@ -572,18 +572,14 @@ SomeType: SomeProtocol, AnotherProtocol
 For example:
 
 ```swift
-struct Ocean: Identifiable {
-    let name: String
+struct SomeStruct: Identifiable {
     let id = UUID()
 }
 
-let oceans = [
-    Ocean(name: "Pacific"),
-    Ocean(name: "Atlantic"),
-    Ocean(name: "Indian"),
-    Ocean(name: "Southern"),
-    Ocean(name: "Arctic")
-]
+enum SomeEnum: CaseIterable {
+    case someCase
+    case anotherCase
+}
 ```
 
 ## Create a task
