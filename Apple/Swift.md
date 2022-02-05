@@ -465,6 +465,17 @@ someCollection.last
 ]
 ```
 
+For example:
+
+```swift
+let someDictionary = [
+    "someKey": someValue,
+    "anotherKey": anotherValue
+]
+
+let anotherDictionary = [:]
+```
+
 ## Decompose values from dictionary items
 
 ```
