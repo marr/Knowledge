@@ -408,6 +408,12 @@ someCollection.compactMap { // ... }
 someCollection.filter { // ... }
 ```
 
+## Reduce items in arrays
+
+```
+someCollection.reduce(initial, { result, item in // ... }
+```
+
 ## Split items in arrays
 
 ```swift
