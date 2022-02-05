@@ -152,8 +152,8 @@ someOptional ?? someDefaultValue
 { // ... }
 ```
 
-- `{ (someValue, anotherValue) in // body }`.
-- `{ // body }` with `$#` for arguments.
+- `{ someValue, anotherValue in // body }`.
+- `{ // body }` with `$#` for argument values.
 
 ## Create instances of structures or classes
 
@@ -372,10 +372,6 @@ for someItem in someCollection {
 }
 ```
 
-- Elements for arrays or sets.
-- `(someKey, someValue)` key-value pairs for dictionaries.
-- Characters for strings.
-
 ## Get a random item in collections
 
 ```swift
@@ -463,6 +459,12 @@ someCollection.last
 ]
 ```
 
+## Decompose values from dictionary items
+
+```
+(someKey, someValue)
+```
+
 ## Create literal integers
 
 ```
@@ -491,16 +493,16 @@ someCollection.last
 (someName: someValue, anotherName: anotherValue)
 ```
 
-## Decompose tuple items
-
-```swift
-let (someValue, anotherValue) = someTuple
-```
-
-## Access tuple items
+## Access tuple values
 
 ```swift
 someTuple.someValue
+```
+
+## Decompose values from tuples
+
+```
+(someValue, anotherValue)
 ```
 
 ## Use protocols
