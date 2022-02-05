@@ -210,35 +210,6 @@ Button(action: someAction) {
 }
 ```
 
-## Add menu views
-
-```
-Menu("Some menu") {
-    // Views
-}
-```
-
-For example: 
-
-```
-Menu("Some menu") {
-    Button(...)
-    Button(...)
-}
-```
-
-## Add toggle views
-
-```swift
-Toggle("Some label", isOn: $someName)
-```
-
-## Add text field views
-
-```swift
-TextField("Some label", text: someValue)
-```
-
 ## Add vertical stack views
 
 ```swift
@@ -349,6 +320,35 @@ ForEach(items) { item in
         // Views
     })
 }
+```
+
+## Add menu views
+
+```
+Menu("Some menu") {
+    // Views
+}
+```
+
+For example: 
+
+```
+Menu("Some menu") {
+    Button(...)
+    Button(...)
+}
+```
+
+## Add toggle views
+
+```swift
+Toggle("Some label", isOn: $someValue)
+```
+
+## Add text field views
+
+```swift
+TextField("Some label", text: $someValue)
 ```
 
 ## Use ObservableObject
