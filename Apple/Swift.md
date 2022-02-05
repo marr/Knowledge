@@ -414,6 +414,12 @@ someCollection.filter { // ... }
 someCollection.reduce(initial, { result, item in // ... }
 ```
 
+## Find the first match in arrays
+
+```
+someCollection.first(where: { // ... })
+```
+
 ## Split items in arrays
 
 ```swift
