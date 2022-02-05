@@ -215,6 +215,8 @@ enum SomeEnum {
 
 ```swift
 [SomeEnum].someCase
+[SomeEnum].someCase.rawValue
+[SomeEnum].allCases
 ```
 
 ## Add switch conditions
