@@ -482,6 +482,29 @@ let anotherDictionary = [:]
 (someKey, someValue)
 ```
 
+## Merge dictionaries
+
+```
+someDictionary.merging(anotherDictionary) { // ... }
+```
+
+- Can use common options like `uniquingKeysWith`.
+
+For example:
+
+```swift
+let someDictionary = [
+    "someKey": 10,
+    "anotherKey": 20
+]
+
+let anotherDictionary = [
+    "someKey": 5
+]
+
+let mergedDictionary = someDictionary.merging(anotherDictionary, uniquingKeysWith: +)
+```
+
 ## Create literal integers
 
 ```
