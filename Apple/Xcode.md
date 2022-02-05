@@ -162,7 +162,7 @@ Preferences > Locations > Open Derived Data Path In Finder > Close Xcode > Delet
 Simulator > Home Screen > Long Press App Icon > Delete
 ```
 
-## Erase device data / settings
+## Erase device data/settings
 
 ```
 Simulator > Device > Erase All Content and Settings

@@ -377,7 +377,7 @@ Picker("Some label", selection: $someValue) {
 .pickerStyle(.segmented)
 ```
 
-## Use ObservableObject
+## Use observable objects
 
 ```
 SomeClass: ObservableObject {
@@ -385,7 +385,7 @@ SomeClass: ObservableObject {
 }
 ```
 
-## Use @ObservedObject
+## Use observed objects
 
 ```
 struct SomeView: View {
@@ -397,7 +397,7 @@ struct SomeView: View {
 }
 ```
 
-## Use @EnvironmentObject
+## Use environment objects
 
 ```
 struct SomeView: View {
@@ -409,7 +409,7 @@ struct SomeView: View {
 }
 ```
 
-## Use @Binding
+## Use bindings
 
 ```
 struct SomeView: View {
@@ -421,7 +421,7 @@ struct SomeView: View {
 }
 ```
 
-## Use @State
+## Use state
 
 ```
 struct SomeView: View {
