@@ -494,6 +494,12 @@ let anotherDictionary = [:]
 (someKey, someValue)
 ```
 
+## Use dictionary keys
+
+```swift
+someDictionary.keys
+```
+
 ## Merge dictionaries
 
 ```
