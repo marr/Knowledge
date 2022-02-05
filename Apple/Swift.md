@@ -49,7 +49,7 @@ public
 ## Annotate types when they can’t be inferred
 
 ```
-: SomeType[?]
+: [SomeType.]SomeType[?]
 ```
 
 - `(SomeType, AnotherType) -> SomeType` for functions.
