@@ -146,7 +146,7 @@ For example:
 someOptional ?? someDefaultValue
 ```
 
-## Use closure expressions
+## Use closures
 
 ```
 { // ... }
@@ -154,6 +154,12 @@ someOptional ?? someDefaultValue
 
 - `{ someValue, anotherValue in // body }`.
 - `{ // body }` with `$#` for argument values.
+
+## Use trailing closures
+
+```
+someFunction { // ... }
+```
 
 ## Create instances of structures or classes
 
@@ -387,19 +393,19 @@ someCollection.randomElement()
 ## Map items in arrays
 
 ```
-someCollection.map({ // ... })
+someCollection.map { // ... }
 ```
 
 ## Compact map items in arrays
 
 ```
-someCollection.compactMap({ // ... })
+someCollection.compactMap { // ... }
 ```
 
 ## Filter items in arrays
 
 ```
-someCollection.filter({ // ... })
+someCollection.filter { // ... }
 ```
 
 ## Split items in arrays
