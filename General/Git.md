@@ -104,11 +104,12 @@ git push
 ## Show diff
 
 ```
-git diff [--staged] [some-reference]
+git diff [--staged] [--name-only] [some-reference]
 ```
 
 - Defaults to comparing with working directory.
 - `--staged` for diff with staging area.
+- `--name-only` for listing file names only.
 - `some-reference` for diff with a reference.
 
 For example:
