@@ -9,6 +9,7 @@
 
 ```
 Window > Developer Documentation
+{Type} > Click
 ```
 
 ## Build/run
