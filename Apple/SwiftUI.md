@@ -218,10 +218,13 @@ VStack {
 }
 ```
 
+- `spacing` to specify the spacing between items.
+- `alignment` to specify the alignment of items.
+
 For example:
 
 ```swift
-VStack(alignment: .leading) {
+VStack(spacing: 0, alignment: .leading) {
     Label("Gift", systemImage: "gift")
     Label("Bolt", systemImage: "bolt")
 }
@@ -232,6 +235,18 @@ VStack(alignment: .leading) {
 ```swift
 HStack {
     // Views
+}
+```
+
+- `spacing` to specify the spacing between items.
+- `alignment` to specify the alignment of items.
+
+For example:
+
+```swift
+HStack(spacing: 10, alignment: .top) {
+    Text("Some text")
+    Text("Some text")
 }
 ```
 
