@@ -164,31 +164,32 @@ someOptional ?? someDefaultValue
 someFunction { // ... }
 ```
 
-## Create instances of structures or classes
+## Create structures or classes
 
 ```swift
-var someInstance = SomeStructOrClass(someArgument: someValue, anotherArgument: anotherValue)
+var someStructOrClass = SomeStructOrClass(someArgument: someValue, anotherArgument: anotherValue)
 ```
 
-## Access instance properties of structures or classes
+## Access properties of structures or classes
 
 ```swift
-someInstance.someProperty = someValue
+someStructOrClass.someProperty = someValue
 ```
 
-## Access instance methods of structures or classes
+## Access methods of structures or classes
 
 ```swift
-someInstance.someMethod()
+someStructOrClass.someMethod()
 ```
 
 ## Create structures
 
 ```
 struct SomeStruct {
-    // Functions for instance methods
-    // Constants / variables for stored instance properties
-    // Variables with { expression } for computed instance properties
+    // Functions for methods
+    // Constants / variables for stored properties
+    // Variables with { // ... } for computed properties
+    // Variables with { didSet { // ... } } for property observers
     // @SomePropertyWrapper for property wrappers
     // self for the instance itself - used by default when using a property / method name within a method like [self.]someProperty
     // init() to customize initialization
