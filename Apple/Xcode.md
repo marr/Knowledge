@@ -97,6 +97,19 @@ Breakpoint Navigator
 Column > Command + Click > Set Column Breakpoint
 ```
 
+## Add integrated todo comments
+
+```
+// TODO: Some thing
+```
+
+## Add integrated marks
+
+```
+// MARK: Some thing
+// MARK:- Some thing
+```
+
 ## Address inline errors/warnings
 
 ```
