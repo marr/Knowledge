@@ -52,7 +52,12 @@ public
 : [SomeType.]SomeType[?]
 ```
 
-- `(SomeType, AnotherType) -> SomeType` for functions.
+- `(someParameter: SomeType, anotherParameter: AnotherType) -> SomeType` for functions.
+- `SomeStruct` for structures.
+- `SomeClass` for classes.
+- `SomeEnum` for enumerations.
+- `(someName: SomeType, anotherName: AnotherType)` for tuples.
+- `Void` for an empty tuple (no return value).
 - `String` for text.
 - `Character` for text items.
 - `Bool` for binary values.
@@ -61,8 +66,6 @@ public
 - `Dictionary` for a collection of key-value pairs.
 - `Int` for numbers without a fractional component.
 - `Double` for numbers with a fractional component.
-- `(SomeType, AnotherType)` for tuples.
-- `Void` for an empty tuple (no return value).
 - `?` for a value that might be `nil` (optional).
 
 ## Convert values to different types
@@ -571,7 +574,7 @@ let mergedDictionary = someDictionary.merging(anotherDictionary, uniquingKeysWit
 someTuple.someValue
 ```
 
-## Decompose values from tuples
+## Decompose tuple values
 
 ```
 (someValue, anotherValue)
