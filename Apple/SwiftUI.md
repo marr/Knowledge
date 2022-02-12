@@ -271,7 +271,7 @@ ZStack {
 ## Add list views
 
 ```
-List[(someCollection)] {
+List {
     // Views
 }
 ```
@@ -292,9 +292,15 @@ List(items) { item in
 .refreshable {
     // Use await for indicator duration
 }
-.task {
-    // Use await for indicator duration
+
+List {
+    ForEach(items) { item in
+        Text(item.text)
+    }
+    .onDelete { // ... }
+    .onMove { // ... }
 }
+.toolbar { EditButton() }
 ```
 
 ## Add for each views
