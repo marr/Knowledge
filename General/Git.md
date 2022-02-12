@@ -18,7 +18,7 @@ git clone git@github.com:some-user/some-repository.git
 git remote add upstream git@github.com:another-user/some-repository.git
 ```
 
-## Create a feature branch
+## Create a branch
 
 ```
 git checkout some-main-branch
@@ -77,7 +77,13 @@ git stash apply
 git push
 ```
 
-## Keep feature branches up to date with a target branch
+## Keep branches up to date with remote changes
+
+```
+git pull
+```
+
+## Keep branches up to date with a target branch
 
 ```
 git checkout some-branch
@@ -111,6 +117,7 @@ For example:
 git diff
 git diff --staged
 git diff origin/some-main-branch
+git diff upstream/some-main-branch
 git diff some-branch..another-branch
 git diff some-tag another-tag
 ```
