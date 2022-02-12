@@ -390,8 +390,9 @@ Canvas > Play Icon
 ## Inspect UI view hierarchy
 
 ```
-Debug Area > View Hierarchy Button
+Debug Area > Debug View Hierarchy Button
 Orient to 3D
+Inspectors
 ```
 
 ## Create a UI test target
