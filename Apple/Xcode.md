@@ -122,7 +122,7 @@ Click > [Fix]
 Find > Find in Project
 Find Navigator
 Find/Replace
-Scope
+Search Scopes
 ```
 
 ## Find in file
