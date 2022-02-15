@@ -152,6 +152,12 @@ Select > Find > Find Selected Text in Workspace
 Select > Navigate > Reveal In Project Navigator
 ```
 
+## Re-indent selected lines
+
+```
+Select > Editor > Structure > Re-Indent
+```
+
 ## Clean build folder
 
 ```
