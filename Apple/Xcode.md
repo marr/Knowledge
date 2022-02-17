@@ -355,6 +355,30 @@ Remove the reference
 Right Click > Update Package
 ```
 
+## Save device screenshot pictures
+
+```
+Simulator > File > Save Screen
+```
+
+## Record device screen videos
+
+```
+Simulator > File > Record Screen
+```
+
+## Toggle device appearance
+
+```
+Simulator > Features > Toggle Appearance
+```
+
+## Change device text size
+
+```
+Simulator > Features > Increase / Decrease Preferred Text Size
+```
+
 ## Use build settings
 
 ```
