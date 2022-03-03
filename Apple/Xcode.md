@@ -35,15 +35,16 @@ Report Navigator
 ## View errors/warnings
 
 ```
-Issue Navigator
 Breadcrumbs > Error/Warning Icon
+Issue Navigator
+Filter
 ```
 
 ## Navigate project files/groups
 
 ```
-Project Navigator
 Breadcrumbs
+Project Navigator
 ```
 
 ## Navigate symbols inside a file
