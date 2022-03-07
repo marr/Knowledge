@@ -123,6 +123,7 @@ Click > [Fix]
 ```
 Find > Find in Project
 Find Navigator
+Filter
 Find/Replace
 Search Scopes
 ```
