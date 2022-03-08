@@ -70,6 +70,9 @@ SomeView { ... }
 .border(.blue)
 .opacity(0.5)
 .frame(width: 100)
+.contextMenu {
+    Button("Some text", action: someAction)
+}
 .task {
     // ...
 }
