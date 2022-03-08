@@ -202,8 +202,31 @@ Button(action: someAction) {
     Text("Some text")
 }
 .disabled
+
+Button(action: someAction) {
+    Text("Some text")
+}
+.confirmationDialog(
+    someTitle,
+    isPresented: $someName
+) {
+    Button("Some text", role: .destructive) {
+        // ...
+    }
+    Button("Some text", role: .cancel) {
+        someName = false
+    }
+}
+
+Button(action: someAction) {
+    Text("Some text")
+}
 .alert("Some alert", isPresented: $someName) {
     Button("Ok", role: .cancel) { }
+}
+
+Button(action: someAction) {
+    Text("Some text")
 }
 .sheet(isPresented: $someName) {
     // Views
