@@ -189,51 +189,43 @@ Label("Some label", systemImage: "someSFSymbol")
 ## Add button views
 
 ```swift
-Button(action: someAction) {
-    // Views
-}
+Button("Some text", action: someAction)
 ```
 
 For example:
 
 ```swift
+Button("Some text", action: { print("Hello world" })
+
 Button(action: someAction) {
     Label("Some label", systemImage: "someSFSymbol")
 }
 
-Button(action: someAction) {
-    Text("Some text")
-}
-.disabled
+Button("Some text", action: someAction)
+    .disabled
 
-Button(action: someAction) {
-    Text("Some text")
-}
-.confirmationDialog(
-    someTitle,
-    isPresented: $someName
-) {
-    Button("Some text", role: .destructive) {
-        // ...
+Button("Some text", action: someAction)
+    .confirmationDialog(
+        someTitle,
+        isPresented: $someName
+    ) {
+        Button("Some text", role: .destructive) {
+            // ...
+        }
+        Button("Some text", role: .cancel) {
+            someName = false
+        }
     }
-    Button("Some text", role: .cancel) {
-        someName = false
+
+Button("Some text", action: someAction)
+    .alert("Some alert", isPresented: $someName) {
+        Button("Some text", role: .cancel, action: someAction)
     }
-}
 
-Button(action: someAction) {
-    Text("Some text")
-}
-.alert("Some alert", isPresented: $someName) {
-    Button("Ok", role: .cancel) { }
-}
-
-Button(action: someAction) {
-    Text("Some text")
-}
-.sheet(isPresented: $someName) {
-    // Views
-}
+Button("Some text", action: someAction)
+    .sheet(isPresented: $someName) {
+        // Views
+    }
 ```
 
 ## Add vertical stack views
