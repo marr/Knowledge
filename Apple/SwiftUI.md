@@ -300,7 +300,21 @@ List {
     .onDelete { // ... }
     .onMove { // ... }
 }
-.toolbar { EditButton() }
+.toolbar {
+    EditButton()
+}
+
+List {
+    Text("Some text")
+    Text("Another text")
+}
+.toolbar {
+    ToolbarItem(placement: .primaryAction) {
+        Button(action: someAction) {
+            Label("Some label", systemImage: "someSFSymbol")
+        }
+    }
+}
 ```
 
 ## Add for each views
