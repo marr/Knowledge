@@ -64,29 +64,54 @@ SomeView()
 For example:
 
 ```
-SomeView { ... }
-.padding()
-.background(.green)
-.border(.blue)
-.opacity(0.5)
-.frame(width: 100)
+.navigationTitle("Some title)
+
+.toolbar {
+    EditButton()
+}
+
+.toolbar {
+    ToolbarItem(placement: .primaryAction) {
+        Button("Some text", action: someAction)
+    }
+}
+
 .contextMenu {
     Button("Some text", action: someAction)
 }
+
+.alert("Some alert", isPresented: $someName) {
+    Button("Some text", role: .cancel, action: someAction)
+}
+
+.sheet(isPresented: $someName) {
+    // Views
+}
+
 .task {
     // ...
 }
+
 .onAppear {
     // ...
 }
+
+.padding()
+
+.background(.green)
+
+.border(.blue)
+
+.opacity(0.5)
+
+.frame(width: 100)
 ```
 
 ## Add navigation views
 
 ```swift
 NavigationView {
-    SomeView()
-        .navigationTitle("Some title)
+    // Views
 }
 ```
 
@@ -197,22 +222,12 @@ For example:
 ```swift
 Button("Some text", action: { print("Hello world" })
 
-Button(action: someAction) {
-    Label("Some label", systemImage: "someSFSymbol")
-}
-
 Button("Some text", action: someAction)
     .disabled
 
-Button("Some text", action: someAction)
-    .alert("Some alert", isPresented: $someName) {
-        Button("Some text", role: .cancel, action: someAction)
-    }
-
-Button("Some text", action: someAction)
-    .sheet(isPresented: $someName) {
-        // Views
-    }
+Button(action: someAction) {
+    Label("Some label", systemImage: "someSFSymbol")
+}
 ```
 
 ## Add vertical stack views
@@ -304,21 +319,6 @@ List {
     }
     .onDelete { // ... }
     .onMove { // ... }
-}
-.toolbar {
-    EditButton()
-}
-
-List {
-    Text("Some text")
-    Text("Another text")
-}
-.toolbar {
-    ToolbarItem(placement: .primaryAction) {
-        Button(action: someAction) {
-            Label("Some label", systemImage: "someSFSymbol")
-        }
-    }
 }
 ```
 
