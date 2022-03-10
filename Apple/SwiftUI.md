@@ -205,19 +205,6 @@ Button("Some text", action: someAction)
     .disabled
 
 Button("Some text", action: someAction)
-    .confirmationDialog(
-        someTitle,
-        isPresented: $someName
-    ) {
-        Button("Some text", role: .destructive) {
-            // ...
-        }
-        Button("Some text", role: .cancel) {
-            someName = false
-        }
-    }
-
-Button("Some text", action: someAction)
     .alert("Some alert", isPresented: $someName) {
         Button("Some text", role: .cancel, action: someAction)
     }
