@@ -118,3 +118,15 @@ func someRequest() async {
     }
 }
 ```
+
+## Use notification center
+
+```
+NotificationCenter
+```
+
+For example:
+
+```swift
+NotificationCenter.default.post(name: someValue, object: nil)
+```

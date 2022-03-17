@@ -8,6 +8,7 @@
 
 /* Begin PBXFileReference section */
 		9F25CBE427651304008CCBBC /* Shell.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Shell.md; sourceTree = "<group>"; };
+		9F260E6827E3E94B00AEAC5F /* Combine.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Combine.md; sourceTree = "<group>"; };
 		9F6D149127641054009422E7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9F6D149327641541009422E7 /* CoreData.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CoreData.md; sourceTree = "<group>"; };
 		9F6D1494276416E9009422E7 /* Foundation.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Foundation.md; sourceTree = "<group>"; };
@@ -37,6 +38,7 @@
 				9F6D149627641CCF009422E7 /* SwiftUI.md */,
 				9F6D1494276416E9009422E7 /* Foundation.md */,
 				9F6D149327641541009422E7 /* CoreData.md */,
+				9F260E6827E3E94B00AEAC5F /* Combine.md */,
 			);
 			path = Apple;
 			sourceTree = "<group>";
