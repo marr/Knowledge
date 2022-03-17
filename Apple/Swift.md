@@ -173,7 +173,7 @@ someFunction { // ... }
 ## Use structures or classes
 
 ```swift
-var someStructOrClass = SomeStructOrClass(someArgument: someValue, anotherArgument: anotherValue)
+let someStructOrClass = SomeStructOrClass(someArgument: someValue, anotherArgument: anotherValue)
 ```
 
 ## Use properties of structures or classes
