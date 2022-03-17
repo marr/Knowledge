@@ -170,19 +170,19 @@ someOptional ?? someDefaultValue
 someFunction { // ... }
 ```
 
-## Create structures or classes
+## Use structures or classes
 
 ```swift
 var someStructOrClass = SomeStructOrClass(someArgument: someValue, anotherArgument: anotherValue)
 ```
 
-## Access properties of structures or classes
+## Use properties of structures or classes
 
 ```swift
 someStructOrClass.someProperty = someValue
 ```
 
-## Access methods of structures or classes
+## Use methods of structures or classes
 
 ```swift
 someStructOrClass.someMethod()
