@@ -46,6 +46,12 @@ private
 public
 ```
 
+## Import modules
+
+```swift
+import SomeModule
+```
+
 ## Annotate types when they can’t be inferred
 
 ```
