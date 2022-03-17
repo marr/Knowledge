@@ -202,6 +202,30 @@ struct SomeStruct {
 }
 ```
 
+For example:
+
+```swift
+struct SomeStruct {
+    func someFunction() -> SomeType {
+        // ...
+    }
+    
+    let someName: SomeType = someValue
+    
+    var someName: SomeType {
+        // ...
+    }
+    
+    @SomePropertyWrapper var someName: SomeType
+    
+    let someParameter: SomeType 
+    
+    init(someParameter: SomeType) {
+        self.someParameter = someParameter
+    }
+}
+```
+
 ## Create classes
 
 ```
