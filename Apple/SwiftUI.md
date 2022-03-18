@@ -391,6 +391,24 @@ Toggle("Some label", isOn: $someValue)
 TextField("Some label", text: $someValue)
 ```
 
+## Add form views
+
+```swift
+Form {
+    // Views
+}
+```
+
+For example:
+
+```swift
+Form {
+    Section(header: Text("Some text")) {
+        TextField("Some label", text: $someValue)
+    }
+}
+```
+
 ## Add picker views
 
 ```
