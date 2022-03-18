@@ -7,8 +7,9 @@
 ## Use publishers
 
 ```
-NotificationCenter.default.publisher(for: someValue)
-    .someOperators
+somePublisher
+    .someOperator(s)
+    .someSubscriber
 ```
 
 For example:
