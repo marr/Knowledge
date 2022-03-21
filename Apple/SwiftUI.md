@@ -96,6 +96,8 @@ For example:
     // ...
 }
 
+.disabled(someValue)
+
 .padding()
 
 .background(.green)
@@ -215,6 +217,8 @@ Label("Some label", systemImage: "someSFSymbol")
 
 ```swift
 Button("Some text", action: someAction)
+
+- `role` to specify the role.
 ```
 
 For example:
@@ -222,12 +226,11 @@ For example:
 ```swift
 Button("Some text", action: { print("Hello world" })
 
-Button("Some text", action: someAction)
-    .disabled
-
 Button(action: someAction) {
     Label("Some label", systemImage: "someSFSymbol")
 }
+
+Button("Some text", action: someAction, role: .destructive)
 ```
 
 ## Add vertical stack views
