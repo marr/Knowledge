@@ -344,6 +344,12 @@ ForEach(items) { item in
 Spacer()
 ```
 
+## Add divider views
+
+```swift
+Divider()
+```
+
 ## Add section views
 
 ```swift
