@@ -494,6 +494,14 @@ For example:
 DatePicker("Some label", selection: $someValue, displayedComponents: [.date])
 ```
 
+## Add disclosure group views
+
+```
+DisclosureGroup("Some label", isExpanded: $someView) {
+    // Views
+}
+```
+
 ## Use observable objects
 
 ```
