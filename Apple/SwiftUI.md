@@ -420,6 +420,14 @@ Form {
 }
 ```
 
+## Add scroll views
+
+```swift
+ScrollView {
+    // Views
+}
+```
+
 ## Add picker views
 
 ```
