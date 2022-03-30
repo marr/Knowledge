@@ -80,11 +80,11 @@ For example:
     Button("Some text", action: someAction)
 }
 
-.alert("Some alert", isPresented: $someName) {
+.alert("Some alert", isPresented: $someValue) {
     Button("Some text", role: .cancel, action: someAction)
 }
 
-.sheet(isPresented: $someName) {
+.sheet(isPresented: $someValue) {
     // Views
 }
 
