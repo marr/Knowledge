@@ -454,6 +454,18 @@ Picker("Some label", selection: $someValue) {
 .pickerStyle(.segmented)
 ```
 
+## Add date picker views
+
+```
+DatePicker("Some label", selection: $someValue, displayedComponents: [.someCase])
+```
+
+For example:
+
+```swift
+DatePicker("Some label", selection: $someValue, displayedComponents: [.date])
+```
+
 ## Use observable objects
 
 ```
