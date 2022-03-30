@@ -129,6 +129,21 @@ NavigationLink(destination: SomeView()) {
 
 ## Add tab views
 
+```
+TabView {
+    SomeView()
+        .tabItem {
+            // Image and/or Text views
+        }
+    AnotherView()
+        .tabItem {
+            // Image and/or Text views
+        }
+}
+```
+
+For example:
+
 ```swift
 TabView {
     SomeView()
@@ -140,6 +155,19 @@ TabView {
             Label("Some label", systemImage: "someSFSymbol")
         }
 }
+.tabViewStyle(.page)
+
+TabView {
+    SomeView()
+        .tabItem {
+            Label("Some label", systemImage: "someSFSymbol")
+        }
+    AnotherView()
+        .tabItem {
+            Label("Some label", systemImage: "someSFSymbol")
+        }
+}
+.tabViewStyle(.carousel)
 ```
 
 ## Add text views
