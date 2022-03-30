@@ -88,6 +88,8 @@ For example:
     // Views
 }
 
+.searchable(text: $someValue)
+
 .task {
     // ...
 }
