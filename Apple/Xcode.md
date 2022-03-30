@@ -394,6 +394,15 @@ Simulator > Features > Increase / Decrease Preferred Text Size
 {Project Name} > {Target} > Build Phases.
 ```
 
+## Use the accessibility inspector
+
+```
+Xcode > Open Developer Tool > Accessibility Inspector > Select Target
+Audit > Run Audit > {Warning} > View/Help
+Point Inspection > Speak > [Auto Navigate]
+Settings
+```
+
 ## Display UI canvas
 
 ```
