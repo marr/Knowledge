@@ -88,6 +88,8 @@ For example:
     // Views
 }
 
+.accessibilityLabel("Some label")
+
 .searchable(text: $someValue)
 
 .task {
