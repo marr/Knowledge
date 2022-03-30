@@ -430,6 +430,12 @@ Toggle("Some label", isOn: $someValue)
 TextField("Some label", text: $someValue)
 ```
 
+## Add text editor views
+
+```swift
+TextEditor(text: $someValue)
+```
+
 ## Add form views
 
 ```swift
