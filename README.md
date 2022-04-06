@@ -1,3 +1,3 @@
 # Knowledge
 
-My primary skills.
+My generic knowledge.
