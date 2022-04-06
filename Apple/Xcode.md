@@ -144,8 +144,8 @@ Brace > Double Click
 ## Find selected items
 
 ```
-Select > Find > Find Selected Symbol in Workspace
-Select > Find > Find Selected Text in Workspace
+Select > Find > Find Selected Symbol in Project
+Select > Find > Find Selected Text in Project
 ```
 
 ## Navigate selected items
