@@ -397,10 +397,11 @@ Simulator > Features > Increase / Decrease Preferred Text Size
 ## Use the accessibility inspector
 
 ```
+Build Target
 Xcode > Open Developer Tool > Accessibility Inspector > Select Target
+Navigate Target To A Screen To Test 
 Audit > Run Audit > {Warning} > View/Help
 Point Inspection > Speak > [Auto Navigate]
-Settings
 ```
 
 ## Display UI canvas
