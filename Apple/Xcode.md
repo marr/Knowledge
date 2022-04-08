@@ -96,6 +96,8 @@ Line # > Toggle
 Run
 Debug Area
 Breakpoint Navigator
+Step Over
+Resume
 Column > Command + Click > Set Column Breakpoint
 ```
 
