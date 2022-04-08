@@ -92,10 +92,10 @@ View > Debug Area > Show Debug Area
 ## Use breakpoints
 
 ```
+Breakpoint Navigator
 Line # > Toggle
 Run
 Debug Area
-Breakpoint Navigator
 Step Over
 Resume
 Column > Command + Click > Set Column Breakpoint
