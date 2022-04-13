@@ -110,6 +110,8 @@ For example:
 
 .opacity(0.5)
 
+.layoutPriority(1)
+
 .frame(width: 100)
 ```
 
