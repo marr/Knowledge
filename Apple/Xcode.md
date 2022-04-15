@@ -383,6 +383,12 @@ Simulator > Features > Toggle Appearance
 Simulator > Features > Increase / Decrease Preferred Text Size
 ```
 
+## Change device internet connection
+
+```
+Switch macOS > Simulator
+```
+
 ## Use build settings
 
 ```
