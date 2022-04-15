@@ -611,10 +611,41 @@ someTuple.someValue
 (someValue, anotherValue)
 ```
 
+## Create protocols
+
+```swift
+protocol SomeProtocol {
+    // Property requirements
+    // Method requirements
+    // Initializer requirements
+}
+```
+
+For example:
+
+```swift
+protocol SomeProtocol {
+    var someProperty: SomeType { get }
+    var anotherProperty: AnotherType { get }
+}
+
+// Can provide default implementations
+extension SomeProtocol {
+    var someProperty: SomeType {
+        // ...
+    }
+    
+    var anotherProperty: AnotherType {
+        // ...
+    }
+}
+```
+
 ## Use protocols
 
 ```
 SomeType: SomeProtocol, AnotherProtocol
+// Provide implementations
 ```
 
 For example:
