@@ -80,7 +80,7 @@ import SomeModule
 SomeType(someValue)
 ```
 
-## Declare functions
+## Create functions
 
 ```
 func someFunction([someLabel] someParameter: SomeType [= SomeDefaultValue], [anotherLabel] anotherParameter: AnotherType [= SomeDefaultValue]) [async] [throws] [-> SomeType] {
@@ -91,7 +91,7 @@ func someFunction([someLabel] someParameter: SomeType [= SomeDefaultValue], [ano
 - `async` if caller needs to `await`.
 - `throws` if caller needs to `try`.
 
-## Call functions
+## Use functions
 
 ```
 [try] [await] someFunction(someArgument: someValue, anotherArgument: anotherValue)
