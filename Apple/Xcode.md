@@ -114,6 +114,12 @@ Column > Command + Click > Set Column Breakpoint
 // MARK:- Some thing
 ```
 
+## Add integrated warnings
+
+```
+#warning Some thing
+```
+
 ## Address inline errors/warnings
 
 ```
