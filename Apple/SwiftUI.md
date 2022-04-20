@@ -90,6 +90,8 @@ For example:
 
 .accessibilityLabel("Some label")
 
+.accessibilityHidden(someValue)
+
 .searchable(text: $someValue)
 
 .task {
