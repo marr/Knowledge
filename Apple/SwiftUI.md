@@ -514,14 +514,6 @@ DisclosureGroup("Some label", isExpanded: $someView) {
 }
 ```
 
-## Use observable objects
-
-```
-SomeClass: ObservableObject {
-    // @Published on properties to expose external data that can change
-}
-```
-
 ## Use observed objects
 
 ```

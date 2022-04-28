@@ -4,6 +4,14 @@
 
 - https://developer.apple.com/documentation/combine
 
+## Use observable objects
+
+```
+SomeClass: ObservableObject {
+    // @Published on published properties
+}
+```
+
 ## Use publishers
 
 ```
