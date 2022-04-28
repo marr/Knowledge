@@ -516,6 +516,31 @@ DisclosureGroup("Some label", isExpanded: $someView) {
 }
 ```
 
+## Use environment
+
+```swift
+struct SomeView: View {
+    // @Environment on properties to read a value from a view's environment
+    
+    var body: some View {
+        // Views
+    }
+}
+```
+
+For example:
+
+```swift
+struct SomeView: View {
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    @Environment(\.locale) var locale: Locale
+    
+    var body: some View {
+        // Views
+    }
+}
+```
+
 ## Use observed objects
 
 ```
