@@ -255,9 +255,9 @@ Label("Some label", systemImage: "someSFSymbol")
 
 ```swift
 Button("Some text", action: someAction)
+```
 
 - `role` to specify the role.
-```
 
 For example:
 
