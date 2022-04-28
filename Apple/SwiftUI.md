@@ -106,6 +106,8 @@ For example:
 
 .padding()
 
+.environment(\.someName, someValue)
+
 .background(.green)
 
 .border(.blue)
