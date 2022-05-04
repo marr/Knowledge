@@ -101,6 +101,12 @@ Resume
 Column > Command + Click > Set Column Breakpoint
 ```
 
+## Add integrated documentation comments
+
+```swift
+/// Some thing
+```
+
 ## Add integrated todo comments
 
 ```
