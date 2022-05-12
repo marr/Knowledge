@@ -4,7 +4,7 @@
 
 - http://developer.apple.com/documentation/foundation
 
-## Create unique IDs
+## Use UUID
 
 ```
 UUID
@@ -16,7 +16,7 @@ For example:
 let someID = UUID()
 ```
 
-## Create URLs
+## Use URL
 
 ```
 URL
@@ -31,7 +31,7 @@ else {
 }
 ```
 
-## Make HTTP requests
+## Use URL session
 
 ```
 URLSession
@@ -43,7 +43,7 @@ For example:
 let (someData, someResponse) = try await URLSession.shared.data(from: someURL)
 ```
 
-## Decode JSON
+## Use JSON decoder
 
 ```
 JSONDecoder
@@ -75,7 +75,8 @@ let someOutput = try JSONDecoder().decode(SomeOutput.self, from: someData)
 ## Use a JSON service
 
 ```
-URLSession + JSONDecoder
+URLSession
+JSONDecoder
 ```
 
 For example:
