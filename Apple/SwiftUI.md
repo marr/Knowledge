@@ -657,3 +657,19 @@ struct SomeView_Previews: PreviewProvider {
     }
 }
 ```
+
+## Create immutable binding values
+
+```
+Binding.constant(someValue)
+```
+
+For example:
+
+```swift
+struct SomeView_Previews: PreviewProvider {
+    static var previews: some View {
+        Toggle("Some label", isOn: .constant(true))
+    }
+}
+```
