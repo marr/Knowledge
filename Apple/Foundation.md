@@ -130,3 +130,23 @@ For example:
 ```swift
 NotificationCenter.default.post(name: someValue, object: nil)
 ```
+
+## Use date formatter
+
+```
+DateFormatter
+```
+
+For example:
+
+```swift
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "YYYY-MM-dd"
+dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+
+// String to date
+dateFormatter.date(from: "2000-01-01")
+
+// Date to string
+dateFormatter.string(from: Date())
+```
