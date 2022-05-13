@@ -275,6 +275,12 @@ Right Click > Refactor
 Right Click > Refactor > Rename > [Toggle] > Rename
 ```
 
+## Show the last change for the line
+
+```
+Editor > Show Last Change For Line
+```
+
 ## Upgrade syntax
 
 ```
