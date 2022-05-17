@@ -220,6 +220,27 @@ File > New > Project
 File > New > Playground
 ```
 
+## Add a live view to playgrounds
+
+```
+PlaygroundSupport
+```
+
+For example:
+
+```swift
+import SwiftUI
+import PlaygroundSupport
+
+struct SomeView: View {
+    var body: some View {
+        // Views
+    }
+}
+
+PlaygroundPage.current.setLiveView(SomeView())
+```
+
 ## Create project packages
 
 ```
