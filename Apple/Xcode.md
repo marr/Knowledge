@@ -354,6 +354,7 @@ final class SomeThingTests: XCTestCase {
 
 - `XCTAssertEqual(someValue, anotherValue)` for input/output comparisons.
 - `XCTUnwrap(someOptional)` for optionals.
+- `XCTAssertGreaterThan(someValue, thresholdValue)` for number comparisons. 
 
 For example:
 
