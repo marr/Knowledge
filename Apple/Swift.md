@@ -441,92 +441,92 @@ someCollection.randomElement()
 ## Merge arrays
 
 ```
-someCollection + anotherCollection 
+someArray + anotherArray 
 ```
 
 For example:
 
 ```swift
-someCollection + [someValue]
+someArray + [someValue]
 ```
 
 ## Map items in arrays
 
 ```
-someCollection.map { // ... }
+someArray.map { // ... }
 ```
 
 ## Compact map items in arrays
 
 ```
-someCollection.compactMap { // ... }
+someArray.compactMap { // ... }
 ```
 
 ## Filter items in arrays
 
 ```
-someCollection.filter { // ... }
+someArray.filter { // ... }
 ```
 
 ## Reduce items in arrays
 
 ```
-someCollection.reduce(initial, { result, item in // ... }
+someArray.reduce(initial, { result, item in // ... }
 ```
 
 ## Find the first match in arrays
 
 ```
-someCollection.first(where: { // ... })
+someArray.first(where: { // ... })
 ```
 
 ## Split items in arrays
 
 ```swift
-someCollection.split(separator: someValue)
+someArray.split(separator: someValue)
 ```
 
 ## Join items in arrays
 
 ```swift
-someCollection.joined(separator: someValue)
+someArray.joined(separator: someValue)
 ```
 
 ## Sort items in arrays
 
 ```swift
-someCollection.sort()
+someArray.sort()
 ```
 
 ## Reverse items in arrays
 
 ```swift
-someCollection.reversed()
+someArray.reversed()
 ```
 
 ## Check if arrays contain an item
 
 ```swift
-someCollection.contains(someValue)
-someCollection.contains(where: { // ... })
+someArray.contains(someValue)
+someArray.contains(where: { // ... })
 ```
 
 ## Get the first item in arrays
 
 ```swift
-someCollection.first
+someArray.first
 ```
 
 ## Get the last item in arrays
 
 ```swift
-someCollection.last
+someArray.last
 ```
 
 ## Get a prefix of items in arrays
 
 ```swift
-someCollection.prefix(someValue)
+someArray.prefix(someValue)
 ```
 
 ## Create literal sets
