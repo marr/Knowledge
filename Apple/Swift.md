@@ -438,6 +438,18 @@ someCollection.randomElement()
 [someValue, anotherValue]
 ```
 
+## Merge arrays
+
+```
+someCollection + anotherCollection 
+```
+
+For example:
+
+```swift
+someCollection + [someValue]
+```
+
 ## Map items in arrays
 
 ```
