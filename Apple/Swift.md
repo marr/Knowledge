@@ -432,6 +432,12 @@ for someItem in someCollection {
 someCollection.randomElement()
 ```
 
+## Create arrays from collections 
+
+```swift
+Array(someCollection)
+```
+
 ## Create literal arrays
 
 ```swift
