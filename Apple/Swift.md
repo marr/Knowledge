@@ -523,6 +523,12 @@ someCollection.first
 someCollection.last
 ```
 
+## Get a prefix of items in arrays
+
+```swift
+someCollection.prefix(someValue)
+```
+
 ## Create literal sets
 
 ```
