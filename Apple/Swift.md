@@ -508,6 +508,7 @@ someCollection.reversed()
 
 ```swift
 someCollection.contains(someValue)
+someCollection.contains(where: { // ... })
 ```
 
 ## Get the first item in arrays
