@@ -636,6 +636,14 @@ someTuple.someValue
 (someValue, anotherValue)
 ```
 
+## Create extensions
+
+```swift
+extension SomeType {
+    // ...
+}
+```
+
 ## Create protocols
 
 ```swift
