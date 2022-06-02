@@ -137,9 +137,18 @@ Click > [Fix]
 ```
 Find > Find in Project
 Find Navigator
-Filter
 Find/Replace
+Text/References/Definitions/Regular Expression
 Search Scopes
+Ignoring Case/Matching Case
+Filter
+```
+
+## Find selected items
+
+```
+Select > Find > Find Selected Symbol in Project
+Select > Find > Find Selected Text in Project
 ```
 
 ## Find in file
@@ -153,13 +162,6 @@ Find/Replace
 
 ```
 Brace > Double Click
-```
-
-## Find selected items
-
-```
-Select > Find > Find Selected Symbol in Project
-Select > Find > Find Selected Text in Project
 ```
 
 ## Navigate selected items
