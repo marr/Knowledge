@@ -218,7 +218,7 @@ struct SomeStruct {
     
     @SomePropertyWrapper var someName: SomeType
     
-    let someParameter: SomeType 
+    private let someParameter: SomeType 
     
     init(someParameter: SomeType) {
         self.someParameter = someParameter
