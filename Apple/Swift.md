@@ -197,6 +197,7 @@ struct SomeStruct {
     // Variables with { // ... } for computed properties
     // Variables with { didSet { // ... } } for property observers
     // @SomePropertyWrapper for property wrappers
+    // static for type properties
     // self for the instance itself - used by default when using a property / method name within a method like [self.]someProperty
     // init() to customize initialization
 }
