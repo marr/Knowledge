@@ -375,6 +375,12 @@ someString.uppercased
 someString.lowercased
 ```
 
+## Sort characters in strings
+
+```swift
+someString.sorted()
+```
+
 ## Create literal characters
 
 ```
