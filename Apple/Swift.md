@@ -366,13 +366,13 @@ someString.hasPrefix/hasSuffix(anotherString)
 ## Uppercase strings
 
 ```swift
-someString.uppercased
+someString.uppercased()
 ```
 
 ## Lowercase strings
 
 ```swift
-someString.lowercased
+someString.lowercased()
 ```
 
 ## Sort characters in strings
