@@ -1,10 +1,5 @@
 # Swift
 
-## Learn more
-
-- http://developer.apple.com/documentation/swift
-- http://developer.apple.com/videos/swift
-
 ## Create the entry point
 
 ```

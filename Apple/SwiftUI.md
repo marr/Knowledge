@@ -1,10 +1,5 @@
 # SwiftUI
 
-## Learn more
-
-- http://developer.apple.com/documentation/swiftui
-- http://developer.apple.com/videos/swiftui-ui-frameworks
-
 ## Create apps
 
 ```swift

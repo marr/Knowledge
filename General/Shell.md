@@ -1,9 +1,5 @@
 # Shell
 
-## Learn more
-
-- https://pubs.opengroup.org/onlinepubs/9699919799/
-
 ## View documentation
 
 ```shell

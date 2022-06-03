@@ -1,9 +1,5 @@
 # Combine
 
-## Learn more
-
-- https://developer.apple.com/documentation/combine
-
 ## Use observable objects
 
 ```

@@ -1,9 +1,5 @@
 # Foundation
 
-## Learn more
-
-- http://developer.apple.com/documentation/foundation
-
 ## Use UUID
 
 ```

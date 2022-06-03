@@ -1,9 +1,5 @@
 # Core Data
 
-## Learn more
-
-- https://developer.apple.com/documentation/coredata
-
 ## Add persistence
 
 ```

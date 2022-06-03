@@ -1,10 +1,5 @@
 # Xcode
 
-## Learn more
-
-- http://developer.apple.com/documentation/xcode
-- http://developer.apple.com/videos/developer-tools
-
 ## View developer documentation
 
 ```

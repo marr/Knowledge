@@ -1,9 +1,5 @@
 # Markdown
 
-## Learn more
-
-- https://commonmark.org/help/
-
 ## Create headings
 
 ```markdown

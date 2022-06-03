@@ -1,9 +1,5 @@
 # Web
 
-## Learn more
-
-- https://developer.mozilla.org/en-US/docs/Web
-
 ## Communicate between web browsers and web servers
 
 ```
