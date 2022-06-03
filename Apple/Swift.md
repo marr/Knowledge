@@ -499,7 +499,7 @@ someArray.joined(separator: someValue)
 ## Sort items in arrays
 
 ```swift
-someArray.sort()
+someArray.sorted()
 ```
 
 ## Reverse items in arrays
