@@ -83,9 +83,13 @@ For example:
     // Views
 }
 
+.accessibilityHidden(someValue)
+
 .accessibilityLabel("Some label")
 
-.accessibilityHidden(someValue)
+.accessibilityValue("Some value")
+
+.accessibilityElement(children: .combine)
 
 .searchable(text: $someValue)
 
