@@ -96,6 +96,12 @@ Resume
 Column > Command + Click > Set Column Breakpoint
 ```
 
+## Use the console
+
+```
+Console > po {someValue}
+```
+
 ## Add integrated documentation comments
 
 ```swift
