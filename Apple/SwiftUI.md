@@ -87,6 +87,10 @@ For example:
     // Views
 }
 
+.fullScreenCover(isPresented: $someValue) {
+    // Views
+}
+
 .accessibilityHidden(someValue)
 
 .accessibilityLabel("Some label")
