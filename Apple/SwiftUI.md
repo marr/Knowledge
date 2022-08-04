@@ -83,6 +83,10 @@ For example:
     // Views
 }
 
+.popover(isPresented: $someValue) {
+    // Views
+}
+
 .accessibilityHidden(someValue)
 
 .accessibilityLabel("Some label")
