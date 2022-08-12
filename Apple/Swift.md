@@ -171,13 +171,13 @@ someFunction { // ... }
 let someStructOrClass = SomeStructOrClass(someArgument: someValue, anotherArgument: anotherValue)
 ```
 
-## Use properties of structures or classes
+## Use properties of structures, classes, or enumerations
 
 ```swift
 someStructOrClass.someProperty = someValue
 ```
 
-## Use methods of structures or classes
+## Use methods of structures, classes, or enumerations
 
 ```swift
 someStructOrClass.someMethod()
@@ -238,12 +238,33 @@ struct SomeStruct {
 
 ```swift
 enum SomeEnum {
+    // Same as structs except also has cases
     case someCase
     case anotherCase
 }
 ```
 
-## Use enumerations
+For example:
+
+```swift
+enum SomeEnum {
+    case someCase
+    case anotherCase
+    
+    var someName: String {
+        switch self {
+        case .someCase:
+            return "Some name"
+        case .anotherCase:
+            return "Another name"
+        }
+    }
+}
+```
+
+- Use singular rather than plural names.
+
+## Use cases of enumerations
 
 ```swift
 [SomeEnum].someCase
