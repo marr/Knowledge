@@ -128,6 +128,22 @@ For example:
 NotificationCenter.default.post(name: someValue, object: nil)
 ```
 
+## Use date
+
+```
+Date
+```
+
+For example:
+
+```swift
+// The current date and time
+Date()
+
+// Add seconds
+someDate.addingTimeInterval(60)
+```
+
 ## Use date formatter
 
 ```
@@ -145,5 +161,5 @@ dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
 dateFormatter.date(from: "2000-01-01")
 
 // Date to string
-dateFormatter.string(from: Date())
+dateFormatter.string(from: someDate)
 ```
