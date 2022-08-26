@@ -153,13 +153,23 @@ DateFormatter
 For example:
 
 ```swift
+// Create
 let dateFormatter = DateFormatter()
-dateFormatter.dateFormat = "YYYY-MM-dd"
-dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+
+// Date style
+dateFormatter.dateStyle = .medium
+
+// Time style
+dateFormatter.timeStyle = .none
 
 // String to date
-dateFormatter.date(from: "2000-01-01")
+dateFormatter.date(from: someString)
 
 // Date to string
 dateFormatter.string(from: someDate)
+
+// Override local values like for unit tests 
+dateFormatter.locale = Locale(identifier: "en_US")
+dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+dateFormatter.dateFormat = "YYYY-MM-dd"
 ```
