@@ -173,3 +173,33 @@ dateFormatter.locale = Locale(identifier: "en_US")
 dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
 dateFormatter.dateFormat = "YYYY-MM-dd"
 ```
+
+## Use calendar
+
+```
+Calendar
+```
+
+For example:
+
+```swift
+// The current calendar
+Calendar.current
+
+// The current calendar with tracking changes
+Calendar.autoupdatingCurrent
+
+// Start of day
+Calendar.autoupdatingCurrent.startOfDay(for: someDate)
+
+// Specific time
+Calendar.autoupdatingCurrent.date(bySettingHour: 17, minute: 0, second: 0, of: someDate)
+
+// Add time
+Calendar.autoupdatingCurrent.date(byAdding: .day, value: 7, to: someDate)
+Calendar.autoupdatingCurrent.date(byAdding: .minute, value: 30, to: someDate)
+
+// Override local values like for unit tests 
+dateFormatter.locale = Locale(identifier: "en_US")
+dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+```
