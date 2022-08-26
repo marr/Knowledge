@@ -125,6 +125,12 @@ do {
 }
 ```
 
+## Use an optional flat map
+
+```
+someOptional.flatMap { // ... }
+```
+
 ## Use optional chaining operators
 
 ```
