@@ -75,6 +75,18 @@ import SomeModule
 SomeType(someValue)
 ```
 
+## Check types
+
+```
+is SomeType
+```
+
+## Downcast types
+
+```
+as? SomeType
+```
+
 ## Create functions
 
 ```
