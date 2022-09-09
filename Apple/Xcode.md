@@ -99,7 +99,10 @@ Column > Command + Click > Set Column Breakpoint
 ## Use the console
 
 ```
-Console > po {someValue}
+Console
+Find > Find
+Filter
+po {someValue}
 ```
 
 ## Add integrated documentation comments
