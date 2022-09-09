@@ -203,3 +203,23 @@ Calendar.autoupdatingCurrent.date(byAdding: .minute, value: 30, to: someDate)
 dateFormatter.locale = Locale(identifier: "en_US")
 dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
 ```
+
+## Use user defaults
+
+```
+UserDefaults
+```
+
+For example:
+
+```swift
+// Save
+UserDefaults.standard.set(someValue, forKey: someKey)
+
+// Load
+UserDefaults.standard.someType(forKey: someKey)
+
+// Delete
+UserDefaults.standard.removeObject(forKey: someKey)
+```
+
