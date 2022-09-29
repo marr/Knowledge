@@ -488,6 +488,7 @@ Canvas > Play Icon
 
 ```
 Debug Area > Debug View Hierarchy Button
+Editor > Show Layers
 Orient to 3D
 Inspectors
 ```
